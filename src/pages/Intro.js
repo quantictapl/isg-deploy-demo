@@ -7,12 +7,12 @@ function Intro() {
   const navigate = useNavigate();
 
   const handleVideoEnd = () => {
-    navigate("/panorama");
+    navigate("/isglobby");
   };
   const videoRef = useRef(null);
   const handleSkip = () => {
     videoRef.current.pause();
-    navigate("/panorama");
+    navigate("/isglobby");
   };
   localStorage.setItem('lastVisitedPage', window.location.href);
   return (

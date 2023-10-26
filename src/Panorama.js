@@ -249,7 +249,7 @@ function Panorama({ lobbyBg, globe, ellie,tv }) {
 
   const rotation1 = " 0 10 0";
   const defaultRotation = "0 -45 0";
-  localStorage.setItem('lastVisitedPage',"/panorama");
+  localStorage.setItem('lastVisitedPage',"/isglobby");
   return (
     <div className="scene-container">
       <HideVRButton />

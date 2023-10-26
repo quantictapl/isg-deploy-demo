@@ -61,8 +61,8 @@ import buttonvideo from "../videos/circle1.mp4";
 import "./componentcss/AppDemonstration.css";
 import rtpmobile from "../SmartMerchantAssets/rtp/rtpmobile.glb";
 import arrow from "../SmartMerchantAssets/videos/arrow.webm";
-// import appHandSingle from "../SmartMerchantAssets/appintro/app_hand_single.glb";
-// import appHandPanSingle from "../SmartMerchantAssets/userreg/app_hand_pan_single.glb";
+// import appHandSingle from "../SmartMerchantAssets/apploading/app_hand_single.glb";
+// import appHandPanSingle from "../SmartMerchantAssets/apploading/app_hand_pan_single.glb";
 // import appHandCardSingle from "../SmartMerchantAssets/paymentmethod/app_hand_card_single.glb";
 // import qrcode from "../SmartMerchantAssets/apploading/appimages/Qrcode.PNG";
 // const esy="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Esy.glb";
@@ -83,7 +83,7 @@ AFRAME.registerComponent("entity-loaded-appdemo", {
 
     // Add an event listener for the 'loaded' event
     entity.addEventListener("model-loaded", () => {
-      // console.log("loaded!");
+      
       entityLoaded = true;
     });
   },
@@ -97,7 +97,7 @@ function AppDemonstration({
   appHandPanSingle,
   appHandCardSingle,
 }) {
-  // console.log(esy);
+  
   const cameraRef = useRef(null);
   const cameraRotationRef = useRef(null);
   const sceneRef = useRef(null);
@@ -182,7 +182,7 @@ function AppDemonstration({
   //   video.play();
   //   audio.play();
   // }
-  // console.log(timeout);
+  
   useEffect(() => {
     // Simulating page load after 3 seconds
     const timer = setTimeout(() => {
@@ -261,7 +261,7 @@ function AppDemonstration({
   const currentPhoneImage =
     assetJson[currentDivision].phoneImages[currentPhoneImageIndex];
 
-  // console.log("Isy hand raised", isyHandRaise);
+  
   useEffect(() => {
     const video = subsVideoRef.current;
     const dummyEsyVideo = isySpeechVideoRef.current;
@@ -363,7 +363,7 @@ function AppDemonstration({
         video.play();
       }
       const duration = video.duration;
-      // console.log("Audio duration:", duration);
+      
     };
     const handleVideoEnded = () => {
       setIsPlaying(false);
@@ -422,7 +422,7 @@ function AppDemonstration({
     };
   }, []);
   useEffect(() => {
-    // console.log(document.querySelector("a-assets").fileLoader);
+    
   }, []);
 
   useEffect(() => {
@@ -509,10 +509,10 @@ function AppDemonstration({
           setIsyHandRaised(false);
           onboarding.classList.remove("blink-button");
           paymentAcceptance.classList.remove("blink-button");
-          // console.log(" is dropdown closed:", isDropdownOpen);
+          
         }
       }
-      // console.log("is drop down open:", isDropdownOpen);
+      
     },
     //[currentDivision,currentPhoneAssetIndex]
     //latest dependency array drop down dint open while using it
@@ -541,9 +541,12 @@ function AppDemonstration({
     setCurrentDivision("apploading"); //11Sep2023
   };
   useEffect(() => {
-    openPopupSound();
-  }, []);
-  // console.log("isPopupSound", isPopupOpenSound);
+    if(isSceneLoaded){
+      openPopupSound();
+    }
+    
+  }, [isSceneLoaded]);
+  
 
   useEffect(() => {
     const skipBtn = skipBtnRef.current;
@@ -660,7 +663,7 @@ function AppDemonstration({
     return () => {
       clearTimeout(delayBindingTimeout);
       skipBtn.removeEventListener("click", handleSkipClick);
-      // console.log("Event listener removed");
+     
       video.removeEventListener("canplay", onCanPlay);
     };
   }, [
@@ -760,7 +763,7 @@ function AppDemonstration({
       clearTimeout(delayBindingTimeout);
       video.removeEventListener("canplay", onCanPlay);
       previousBtn.removeEventListener("click", handlePreviousClick);
-      // console.log("Event listener removed");
+      
     };
   }, [
     currentDivision,
@@ -897,7 +900,7 @@ function AppDemonstration({
       dashboard.removeEventListener("click", handleDivisionButtonClick);
       refund.removeEventListener("click", handleDivisionButtonClick);
       video.removeEventListener("canplay", onCanPlay);
-      // console.log("Event listener removed");
+      
     };
   }, [
     currentDivision,
@@ -966,7 +969,7 @@ function AppDemonstration({
         // const phoneAsset=phoneAssetRef.current;
         const phoneAsset = document.querySelector("#phone-asset");
         if (phoneAsset) {
-          // console.log(phoneAsset.getAttribute("animation-mixer"));
+          
           setAnimationClicked(true);
         } else {
           setAnimationClicked(false);
@@ -1008,9 +1011,9 @@ function AppDemonstration({
         setAnimationClicked(false);
         setExtrasVisible(false);
         buttonEntity.addEventListener("click", handleClick);
-        // console.log("Event listener added");
+        
         buttonEntity.removeEventListener("click", handleClick);
-        // console.log("Event listener removed");
+        
         buttonEntity.setAttribute("visible", "false");
       };
 
@@ -1042,7 +1045,7 @@ function AppDemonstration({
             openPopup();
           }, 2500);
 
-          // console.log(playNextAssets);
+          
         }
         setTimeout(() => {
           setCurrentDivision(nextDivision);
@@ -1056,9 +1059,9 @@ function AppDemonstration({
     };
 
     buttonEntity.removeEventListener("click", handleClick);
-    //console.log("Event listener removed");
+    
     buttonEntity.addEventListener("click", handleClick);
-    // console.log("Event listener added");
+    
     if (
       (currentDivision === "nullAssets" && currentPhoneAssetIndex === 1) ||
       (currentPhoneAssetIndex === 1 && currentDivision === "nullAssets1")
@@ -1075,7 +1078,7 @@ function AppDemonstration({
       video.removeEventListener("play", handleVideoPlay);
       video.removeEventListener("canplay", onCanPlay);
       buttonEntity.removeEventListener("click", handleClick);
-      // console.log("Event listener removed");
+      
     };
   }, [
     pageLoaded,
@@ -1145,8 +1148,7 @@ function AppDemonstration({
   useEffect(() => {
     setCurrentSubtitle("");
   }, [currentPhoneAssetIndex]);
-  // console.log(currentSubtitle);
-  // console.log("esy hand loaded", esyHandLoaded);
+  
   //   useEffect(()=>{
   //     const phoneVideoIn = document.querySelector('#phone-video-in');
 
@@ -1180,13 +1182,13 @@ function AppDemonstration({
 
   const handleLobbyClick = (event) => {
     event.stopPropagation();
-    navigate("/panorama");
-    // console.log("panorama button clicked"); // Replace "/your-route" with the desired path
+    navigate("/isglobby");
+    // Replace "/your-route" with the desired path
   };
   const handleSmartmerchantClick = (event) => {
     event.stopPropagation();
     navigate("/smartmerchant");
-    // console.log("panorama button clicked"); // Replace "/your-route" with the desired path
+     // Replace "/your-route" with the desired path
   };
 
   // const [currentEntityIndex, setCurrentEntityIndex] = useState(0);
@@ -1466,7 +1468,7 @@ function AppDemonstration({
             id="camera"
             rotation="0 -40 0"
             wasd-controls-enabled="false"
-            camera={`userHeight:1.6; active:true; zoom:${zoom};`}
+            camera={`userHeight:1.6; active:true; zoom:1.5;`}
             look-controls="true"
             ref={cameraRef}
             position="0 0 0"
@@ -1482,7 +1484,7 @@ function AppDemonstration({
           >
             <a-entity
               id="phone-light-1"
-              light="type: spot; castShadow: true; intensity: 1.5; distance: 200; color: #ffffff; penumbra: 1; angle: 40; groundColor: #ffffff; shadowCameraRight: 7.22; decay: -0.33"
+              light="type: spot; castShadow: true; intensity: 1; distance: 200; color: #ffffff; penumbra: 1; angle: 40; groundColor: #ffffff; shadowCameraRight: 7.22; decay: -0.33"
               position="0.02127 1.151 -0.60992"
               rotation="-77.21523021860052 129.48044029043422 60.95468799278776"
               scale="0.2 0.2 0.2"
@@ -1494,6 +1496,8 @@ function AppDemonstration({
               rotation="-64.51791252070635 20.737061479169885 172.13084560217757"
               scale="0.2 0.2 0.2"
             ></a-entity>
+            <a-entity id="phone-light-3" light="type: spot; castShadow: true; intensity: 0.4; distance: 200; color: #ffffff; penumbra: 1; angle: 40; groundColor: #ffffff; shadowCameraRight: 7.22; decay: -0.33" 
+            position="0.02127 -1.26743 -0.60992" rotation="84.09874516930223 -133.66303219488924 -122.26976643871281" scale="0.2 0.2 0.2"></a-entity>
             {assetsVisible && (
               <>
                 <a-entity

@@ -423,7 +423,7 @@ function RoutePages() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route
-            path="/panorama"
+            path="/isglobby"
             element={
               <PrivateRoute
                 authenticated={authenticated}

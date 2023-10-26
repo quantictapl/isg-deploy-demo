@@ -6,7 +6,7 @@ import bg from "../green-screen.webp"
 
 function SmartMerchantHelper({models,videos,images}) {
   const [loading,setLoading]=useState(true);
-  console.log("the models are",models)
+
   localStorage.setItem('lastVisitedPage', window.location.href);
   useEffect(() => {
     // Simulate a delay for demonstration purposes
@@ -17,7 +17,7 @@ function SmartMerchantHelper({models,videos,images}) {
     // Clean up the timeout on component unmount
     return () => clearTimeout(timeout);
   }, []);
-  console.log("images:",images)
+
   if (loading) {
     return <div className='loading-container'>
       <video
