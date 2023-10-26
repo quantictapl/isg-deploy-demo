@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import SmartMerchant from '../components/SmartMerchant6';
+import SmartMerchant from '../components/SmartMerchant7';
 import isgloading from "../videos/isgloading.webm"
 import "../components/componentcss/SmartMerchant.css";
 import bg from "../green-screen.webp"
