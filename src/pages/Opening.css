@@ -1,0 +1,31 @@
+.opening-container{
+    position:relative;
+}
+.videos{
+    width: 100vw;
+    height: 100vh;
+    object-fit:cover;
+
+}
+.skip-btn{
+    position:absolute;
+    top:85%;
+    right:5%;
+    z-index: 1;
+    height:4rem;
+    width:7rem;
+    position: absolute;
+    border: 0.2em solid white;
+    font-size: x-large;
+    font-weight: 500;
+    color: rgb(224, 224, 224);
+    background: transparent;
+    border-radius: 40%;
+    opacity: 0.9;
+
+}
+.skip-btn:hover {
+    background-color: rgb(180, 180, 180);
+    color: black;
+    opacity: 1;
+  }

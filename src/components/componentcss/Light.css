@@ -1,0 +1,47 @@
+.move-light {
+    width: 40vh;
+    height: 200vh;
+    border-radius: 50% 50% 0 0;
+    top: -40%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255), rgb(255, 255, 255), rgb(252, 252, 252), rgb(253, 253, 253), rgba(255, 255, 255, 0));
+    position: absolute;
+    z-index: 6;
+    animation: move 4s linear infinite;
+    overflow: hidden;
+  }
+  
+  .moveReverse {
+    animation: move-reverse 4s linear infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes move {
+    0% {
+      opacity: 0;
+      transform: perspective(400rem) translateX(-300%) translateZ(0) rotateY(0);
+    }
+    50% {
+      opacity: 0.2;
+      transform: perspective(400rem) translateX(0%) translateZ(-20rem) rotateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: perspective(400rem) translateX(300%) translateZ(0) rotateY(0);
+    }
+  }
+  
+  @keyframes move-reverse {
+    0% {
+      opacity: 0;
+      transform: perspective(400rem) translateX(300%) translateZ(0) rotateY(0);
+    }
+    50% {
+      opacity: 0.2;
+      transform: perspective(400rem) translateX(0%) translateZ(-20rem) rotateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: perspective(400rem) translateX(-300%) translateZ(0) rotateY(0);
+    }
+  }
+  

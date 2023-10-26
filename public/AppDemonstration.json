@@ -1,0 +1,862 @@
+
+{"divisions":{
+    "apploading": {
+      "phoneImages": [
+        {
+          "name": "appimg1",
+          "imagePath": "../SmartMerchantAssets/apploading/appimages/Qrcode.PNG",
+          "buttonPosition": { "x": 0.023, "y": 0.088 },
+          "width": 3.8,
+          "height": 3.8,
+          "position": { "x": 0.00396, "y": 0.08907, "z": -0.96379 },
+          "rotation": {
+            "x": 2.8447354528245374,
+            "y": -0.4526366581533504,
+            "z": -0.1753250853100319
+          }
+        },
+        {
+          "name": "appimg2",
+          "imagePath": "../SmartMerchantAssets/apploading/appimages/2.png",
+          "buttonPosition": { "x": 0.642, "y": 0.024 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        },
+        {
+          "name": "appimg3",
+          "imagePath": "../SmartMerchantAssets/apploading/appimages/3.png",
+          "buttonPosition": { "x": 0.642, "y": 0.024 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        }
+      ],
+      "phoneAssets": [
+        {
+          "name": "apploading1",
+          "imagePath": "invisible",
+          "animation": "",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -0.97307, "y": -3.08774, "z": -3.43762 },
+          "rotation": {
+            "x": -61.526499872328316,
+            "y": -169.76051920372137,
+            "z": -0.8416750010471793
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/qrdialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/qrAudio.mp4"
+          }
+        },
+        {
+          "name": "apploading2",
+          "imagePath": "../SmartMerchantAssets/apploading/apploadingtwo.glb",
+          "animation": "Animation",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -0.97307, "y": -3.08774, "z": -3.43762 },
+          "rotation": {
+            "x": -61.526499872328316,
+            "y": -169.76051920372137,
+            "z": -0.8416750010471793
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/Apploading2Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/apploading2Audio.mp4"
+          }
+        },
+        {
+          "name": "apploading3",
+          "imagePath": "../SmartMerchantAssets/apploading/apploadingthree.glb",
+          "animation": "",
+          "scale": { "x": 2.813, "y": 2.813, "z": 2.813 },
+          "position": { "x": -0.97307, "y": -3.08774, "z": -3.43762 },
+          "rotation": {
+            "x": -61.526499872328316,
+            "y": -169.76051920372137,
+            "z": -0.8416750010471793
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/Apploading3Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/apploading3Audio.mp4"
+          }
+        }
+      ]
+    },
+    "nullAssets": {
+      "phoneImages": [
+        {
+          "name": "nullImg1",
+          "imagePath": "",
+          "buttonPosition": { "x": 0.023, "y": 0.088 },
+          "width": 0,
+          "height": 0,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        },
+        {
+          "name": "nullImg2",
+          "imagePath": "",
+          "buttonPosition": { "x": -0.706, "y": 0.295 },
+          "width": 0,
+          "height": 0,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        }
+      ],
+      "phoneAssets": [
+        {
+          "name": "nullAsset1",
+          "imagePath": "",
+          "animation": "Animation",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -1.1, "y": 0.388, "z": -0.877 },
+          "rotation": {
+            "x": -62.723,
+            "y": -171.366,
+            "z": 2.282
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/onboarding1Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/onboarding1Audio.mp4"
+          }
+        },
+        {
+          "name": "nullAsset2",
+          "imagePath": "",
+          "animation": "Animation",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -1.1, "y": 0.388, "z": -0.877 },
+          "rotation": {
+            "x": -62.723,
+            "y": -171.366,
+            "z": 2.282
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/onboarding2Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/onboarding2Audio.mp4"
+          }
+        }    
+      ]
+    },
+    "appintro": {
+      "phoneImages": [
+        {
+          "name": "appintro1",
+          "imagePath": "../SmartMerchantAssets/appintro/appintroimages/1.png",
+          "buttonPosition": { "x": 0.58124, "y": -0.22324 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        },
+        {
+          "name": "appintro2",
+          "imagePath": "../SmartMerchantAssets/appintro/appintroimages/2.png",
+          "buttonPosition": { "x": 0.635, "y": -0.294 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        },
+        {
+          "name": "appintro3",
+          "imagePath": "../SmartMerchantAssets/appintro/appintroimages/3.png",
+          "buttonPosition": { "x": 0.692, "y": -0.043 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        },
+        {
+          "name": "appintro4",
+          "imagePath": "../SmartMerchantAssets/appintro/appintroimages/4.png",
+          "buttonPosition": { "x": 0.635, "y": -0.294 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        },
+        {
+          "name": "appintro5",
+          "imagePath": "../SmartMerchantAssets/appintro/appintroimages/5.png",
+          "buttonPosition": { "x": 0.69, "y": -0.143 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        }
+      ],
+      "phoneAssets": [
+        {
+          "name": "appintroasset1",
+          "imagePath": "../SmartMerchantAssets/appintro/appintro1.glb",
+          "animation": "",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -0.97307, "y": -3.08774, "z": -3.43762 },
+          "rotation": {
+            "x": -61.526499872328316,
+            "y": -169.76051920372137,
+            "z": -0.8416750010471793
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/AppIntro1Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/AppIntro1Audio.mp4"
+          }
+        },
+        {
+          "name": "appintroasset2",
+          "imagePath": "../SmartMerchantAssets/appintro/appintro2.glb",
+          "animation": "",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -0.97307, "y": -3.08774, "z": -3.43762 },
+          "rotation": {
+            "x": -61.526499872328316,
+            "y": -169.76051920372137,
+            "z": -0.8416750010471793
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/AppIntro1Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/AppIntro1Audio.mp4"
+          }
+        },
+        {
+          "name": "appintroasset3",
+          "imagePath": "../SmartMerchantAssets/appintro/appintro3.glb",
+          "animation": "",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -0.97307, "y": -3.08774, "z": -3.43762 },
+          "rotation": {
+            "x": -61.526499872328316,
+            "y": -169.76051920372137,
+            "z": -0.8416750010471793
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/AppIntro1Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/AppIntro1Audio.mp4"
+          }
+        },
+        {
+          "name": "appintroasset4",
+          "imagePath": "../SmartMerchantAssets/appintro/appintro4.glb",
+          "animation": "",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -0.97307, "y": -3.08774, "z": -3.43762 },
+          "rotation": {
+            "x": -61.526499872328316,
+            "y": -169.76051920372137,
+            "z": -0.8416750010471793
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/AppIntro1Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/AppIntro1Audio.mp4"
+          }
+        },
+        {
+          "name": "appintroasset5",
+          "imagePath": "../SmartMerchantAssets/appintro/appintro5.glb",
+          "animation": "",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -0.97307, "y": -3.08774, "z": -3.43762 },
+          "rotation": {
+            "x": -61.526499872328316,
+            "y": -169.76051920372137,
+            "z": -0.8416750010471793
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/AppIntro2Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/AppIntro2Audio.mp4"
+          }
+        }
+      ]
+    },
+    "userreg": {
+      "phoneImages": [
+        {
+          "name": "userregimg1",
+          "imagePath": "../SmartMerchantAssets/userreg/UserRegImages/1.png",
+          "buttonPosition": { "x": 0.662, "y": -0.285 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        },
+        {
+          "name": "userregimg2",
+          "imagePath": "../SmartMerchantAssets/userreg/UserRegImages/2.png",
+          "buttonPosition": { "x": 0.642, "y": 0.024 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        },
+        {
+          "name": "userregimg3",
+          "imagePath": "../SmartMerchantAssets/userreg/UserRegImages/3.png",
+          "buttonPosition": { "x": 0.603, "y": -0.289 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        }
+      ],
+      "phoneAssets": [
+        {
+          "name": "userreg1",
+          "imagePath": "../SmartMerchantAssets/userreg/userreg1.glb",
+          "animation": "Animation",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -0.97307, "y": -3.08774, "z": -3.43762 },
+          "rotation": {
+            "x": -61.526499872328316,
+            "y": -169.76051920372137,
+            "z": -0.8416750010471793
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/userreg1Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/userreg1Audio.mp4"
+          }
+        },
+        {
+          "name": "userreg2",
+          "imagePath": "../SmartMerchantAssets/userreg/userreg2.glb",
+          "animation": "Animation",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -0.97307, "y": -3.08774, "z": -3.43762 },
+          "rotation": {
+            "x": -61.526499872328316,
+            "y": -169.76051920372137,
+            "z": -0.8416750010471793
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/userreg2Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/userreg2Audio.mp4"
+          }
+        },
+        {
+          "name": "userreg3",
+          "imagePath": "../SmartMerchantAssets/userreg/userreg3.glb",
+          "animation": "",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -0.97307, "y": -3.08774, "z": -3.43762 },
+          "rotation": {
+            "x": -61.526499872328316,
+            "y": -169.76051920372137,
+            "z": -0.8416750010471793
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/userreg3Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/userreg3Audio.mp4"
+          }
+        }
+      ]
+    },
+    "nullAssets1": {
+      "phoneImages": [
+        {
+          "name": "nullImg1",
+          "imagePath": "",
+          "buttonPosition": { "x": 0.023, "y": 0.088 },
+          "width": 0,
+          "height": 0,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        },
+        {
+          "name": "nullImg2",
+          "imagePath": "",
+          "buttonPosition": { "x": -0.706, "y": 0.295 },
+          "width": 0,
+          "height": 0,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        }
+      ],
+      "phoneAssets": [
+        {
+          "name": "nullAsset1",
+          "imagePath": "",
+          "animation": "Animation",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -1.1, "y": 0.388, "z": -0.877 },
+          "rotation": {
+            "x": -62.723,
+            "y": -171.366,
+            "z": 2.282
+          },
+          "subsVideo": {
+            "videoElement":"../SmartMerchantAssets/videos/Dialogs/paymentacceptance1Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/paymentAcceptance1Audio.mp4"
+          }
+        },
+        {
+          "name": "nullAsset2",
+          "imagePath": "",
+          "animation": "Animation",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -1.1, "y": 0.388, "z": -0.877 },
+          "rotation": {
+            "x": -62.723,
+            "y": -171.366,
+            "z": 2.282
+          },
+          "subsVideo": {
+            "videoElement":"../SmartMerchantAssets/videos/Dialogs/paymentacceptance2Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/paymentAcceptance2Audio.mp4"
+          }
+        }
+      ]
+    },
+    "paymentmethod": {
+      "phoneImages": [
+        {
+          "name": "paymentimg1",
+          "imagePath": "../SmartMerchantAssets/paymentmethod/paymentmethodimg/1.png",
+          "buttonPosition": { "x": 0.662, "y": -0.285 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        },
+        {
+          "name": "paymentimg2",
+          "imagePath": "../SmartMerchantAssets/paymentmethod/paymentmethodimg/2.png",
+          "buttonPosition": { "x": 0.642, "y": 0.024 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        },
+        {
+          "name": "paymentimg3",
+          "imagePath":"../SmartMerchantAssets/paymentmethod/paymentmethodimg/3.png",
+          "buttonPosition": { "x": 0.603, "y": -0.289 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        },
+        {
+          "name": "paymentimg4",
+          "imagePath": "../SmartMerchantAssets/paymentmethod/paymentmethodimg/4.png",
+          "buttonPosition": { "x": 0.603, "y": -0.289 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        },
+        {
+          "name": "paymentimg5",
+          "imagePath": "../SmartMerchantAssets/paymentmethod/paymentmethodimg/5.png",
+          "buttonPosition": { "x": 0.642, "y": 0.024 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        },
+        {
+          "name": "paymentimg6",
+          "imagePath": "../SmartMerchantAssets/paymentmethod/paymentmethodimg/6.png",
+          "buttonPosition": { "x": 0.603, "y": -0.289 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        },
+        {
+          "name": "paymentimg7",
+          "imagePath": "../SmartMerchantAssets/paymentmethod/paymentmethodimg/7.png",
+          "buttonPosition": { "x": 0.603, "y": -0.289 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        }
+      ],
+      "phoneAssets": [
+        {
+          "name": "paymentmethod1",
+          "imagePath": "../SmartMerchantAssets/paymentmethod/paymentmethod1.glb",
+          "animation": "",
+          "scale": { "x": 0.60589, "y": 0.60589, "z": 0.60589 },
+          "position": { "x": -0.77297, "y": -2.61681, "z": -2.98667 },
+          "rotation": {
+            "x": -61.526499872328316,
+            "y": -169.76051920372137,
+            "z": -0.8416750010471793
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/paymentmethod1Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/payment1Audio.mp4"
+          }
+        },
+        {
+          "name": "paymentmethod2",
+          "imagePath": "../SmartMerchantAssets/paymentmethod/paymentmethod2.glb",
+          "animation": "",
+          "scale": { "x": 0.029, "y": 0.029, "z": 0.029 },
+          "position": { "x": -0.773, "y": -2.617, "z": -2.987 },
+          "rotation": {
+            "x": -61.526499872328316,
+            "y": -169.76051920372137,
+            "z": -0.8416750010471793
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/paymentmethod2Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/payment2Audio.mp4"
+          }
+        },
+        {
+          "name": "paymentmethod3",
+          "imagePath": "../SmartMerchantAssets/paymentmethod/paymentmethod3.glb",
+          "animation": "",
+          "scale": { "x": 0.029, "y": 0.029, "z": 0.029 },
+          "position": { "x": -0.773, "y": -2.617, "z": -2.987 },
+          "rotation": {
+            "x": -61.526499872328316,
+            "y": -169.76051920372137,
+            "z": -0.8416750010471793
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/paymentmethod3Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/payment3Audio.mp4"
+          }
+        },
+        {
+          "name": "paymentmethod4",
+          "imagePath":"../SmartMerchantAssets/paymentmethod/paymentmethod4.glb",
+          "animation": "",
+          "scale": { "x": 0.029, "y": 0.029, "z": 0.029 },
+          "position": { "x": -0.773, "y": -2.617, "z": -2.987 },
+          "rotation": {
+            "x": -61.526499872328316,
+            "y": -169.76051920372137,
+            "z": -0.8416750010471793
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/paymentmethod4Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/payment4Audio.mp4"
+          }
+        },
+        {
+          "name": "paymentmethod5",
+          "imagePath": "../SmartMerchantAssets/paymentmethod/paymentmethod5.glb",
+          "animation": "",
+          "scale": { "x": 0.029, "y": 0.029, "z": 0.029 },
+          "position": { "x": -0.773, "y": -2.617, "z": -2.987 },
+          "rotation": {
+            "x": -61.526499872328316,
+            "y": -169.76051920372137,
+            "z": -0.8416750010471793
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/paymentmethod5Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/payment5Audio.mp4"
+          }
+        },
+        {
+          "name": "paymentmethod6",
+          "imagePath": "../SmartMerchantAssets/paymentmethod/paymentmethod6.glb",
+          "animation": "",
+          "scale": { "x": 0.029, "y": 0.029, "z": 0.029 },
+          "position": { "x": -0.773, "y": -2.617, "z": -2.987 },
+          "rotation": {
+            "x": -61.526499872328316,
+            "y": -169.76051920372137,
+            "z": -0.8416750010471793
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/paymentmethod6Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/payment6Audio.mp4"
+          }
+        },
+        {
+          "name": "paymentmethod7",
+          "imagePath": "../SmartMerchantAssets/paymentmethod/paymentmethod7.glb",
+          "animation": "",
+          "scale": { "x": 0.029, "y": 0.029, "z": 0.029 },
+          "position": { "x": -0.773, "y": -2.617, "z": -2.987 },
+          "rotation": {
+            "x": -61.526499872328316,
+            "y": -169.76051920372137,
+            "z": -0.8416750010471793
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/paymentmethod7Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/payment7Audio.mp4"
+          }
+        }
+      ]
+    },
+    "rtpmethod": {
+      "phoneImages": [
+        {
+          "name": "rtpimg1",
+          "imagePath": "../SmartMerchantAssets/rtp/rtpimages/1.png",
+          "buttonPosition": { "x": 0.662, "y": -0.285 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        },
+        {
+          "name": "rtpimg2",
+          "imagePath": "../SmartMerchantAssets/rtp/rtpimages/2.png",
+          "buttonPosition": { "x": 0.642, "y": 0.024 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        },
+        {
+          "name": "rtpimg3",
+          "imagePath": "../SmartMerchantAssets/rtp/rtpimages/3.png",
+          "buttonPosition": { "x": 0.603, "y": -0.289 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        },
+        {
+          "name": "rtpimg4",
+          "imagePath": "../SmartMerchantAssets/rtp/rtpimages/4.png",
+          "buttonPosition": { "x": 0.603, "y": -0.289 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        }
+      ],
+      "phoneAssets": [
+        {
+          "name": "rtpmethod1",
+          "imagePath": "../SmartMerchantAssets/rtp/rtpmethod1.glb",
+          "animation": "Animation",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -1.0364, "y": -3.02252, "z": -3.46246 },
+          "rotation": {
+            "x": -62.42890839965937,
+            "y": -172.72557579352335,
+            "z": 3.9614301955345113
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/rtp1Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/rtp1Audio.mp4"
+          }
+        },
+        {
+          "name": "rtpmethod2",
+          "imagePath": "../SmartMerchantAssets/rtp/rtpmethod2.glb",
+          "animation": "Animation",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -1.0364, "y": -3.02252, "z": -3.46246 },
+          "rotation": {
+            "x": -62.42890839965937,
+            "y": -172.72557579352335,
+            "z": 3.9614301955345113
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/rtp2Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/rtp2Audio.mp4"
+          }
+        },
+        {
+          "name": "rtpmethod3",
+          "imagePath":"../SmartMerchantAssets/rtp/rtpmethod3.glb",
+          "animation": "",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -1.0364, "y": -3.02252, "z": -3.46246 },
+          "rotation": {
+            "x": -62.42890839965937,
+            "y": -172.72557579352335,
+            "z": 3.9614301955345113
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/rtp3Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/rtp3Audio.mp4"
+          }
+        },
+        {
+          "name": "rtpmethod4",
+          "imagePath": "../SmartMerchantAssets/rtp/rtpmethod4.glb",
+          "animation": "",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -1.0364, "y": -3.02252, "z": -3.46246 },
+          "rotation": {
+            "x": -62.42890839965937,
+            "y": -172.72557579352335,
+            "z": 3.9614301955345113
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/rtp4Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/rtp4Audio.mp4"
+          }
+        }
+      ]
+    },
+    "recpay": {
+      "phoneImages": [
+        {
+          "name": "recpayvideo1",
+          "imagePath": "../SmartMerchantAssets/recordpayment/1.webm",
+          "buttonPosition": { "x": 0.662, "y": -0.285 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        },
+        {
+          "name": "recpayvideo2",
+          "imagePath": "../SmartMerchantAssets/recordpayment/2.webm",
+          "buttonPosition": { "x": 0.642, "y": 0.024 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        },
+        {
+          "name": "recpayvideo3",
+          "imagePath": "../SmartMerchantAssets/recordpayment/3.webm",
+          "buttonPosition": { "x": 0.603, "y": -0.289 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        }
+      ],
+      "phoneAssets": [
+        {
+          "name": "recpay",
+          "imagePath": "../SmartMerchantAssets/recordpayment/recpay.glb",
+          "animation": "",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -1.0364, "y": -3.02252, "z": -3.46246 },
+          "rotation": {
+            "x": -62.42890839965937,
+            "y": -172.72557579352335,
+            "z": 3.9614301955345113
+          },
+          "subsVideo": {
+            "videoElement":"../SmartMerchantAssets/videos/Dialogs/recpay1Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/recpay1Audio.mp4"
+          }
+        },
+        {
+          "name": "recpay2",
+          "imagePath": "../SmartMerchantAssets/recordpayment/recpay.glb",
+          "animation": "",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -1.0364, "y": -3.02252, "z": -3.46246 },
+          "rotation": {
+            "x": -62.42890839965937,
+            "y": -172.72557579352335,
+            "z": 3.9614301955345113
+          },
+          "subsVideo": {
+            "videoElement":"../SmartMerchantAssets/videos/Dialogs/recpay2Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/recpay2Audio.mp4"
+          }
+        },
+        {
+          "name": "recpay3",
+          "imagePath": "../SmartMerchantAssets/recordpayment/recpay.glb",
+          "animation": "",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -1.0364, "y": -3.02252, "z": -3.46246 },
+          "rotation": {
+            "x": -62.42890839965937,
+            "y": -172.72557579352335,
+            "z": 3.9614301955345113
+          },
+          "subsVideo": {
+            "videoElement":"../SmartMerchantAssets/videos/Dialogs/recpay3Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/recpay3Audio.mp4"
+          }
+        }
+      ]
+    },
+    "refundprocess": {
+      "phoneImages": [
+        {
+          "name": "refundimg1",
+          "imagePath": "../SmartMerchantAssets/refundprocess/refundimg1.png",
+          "buttonPosition": { "x": 0.662, "y": -0.285 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        },
+        {
+          "name": "refundim2",
+          "imagePath": "../SmartMerchantAssets/refundprocess/refundimg2.png",
+          "buttonPosition": { "x": 0.662, "y": -0.285 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        },
+        {
+          "name": "refundimg3",
+          "imagePath": "../SmartMerchantAssets/refundprocess/refundimg3.png",
+          "buttonPosition": { "x": 0.662, "y": -0.285 },
+          "width": 2,
+          "height": 3.8,
+          "position": { "x": 0.65229, "y": -0.006, "z": -0.98319 },
+          "rotation": { "x": 0.529, "y": -8.097, "z": 0.751 }
+        }
+      ],
+      "phoneAssets": [
+        {
+          "name": "refundasset1",
+          "imagePath": "../SmartMerchantAssets/refundprocess/refund1.glb",
+          "animation": "Animation",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -1.0364, "y": -3.02252, "z": -3.46246 },
+          "rotation": {
+            "x": -62.723,
+            "y": -171.366,
+            "z": 2.282
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/refund1Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/refund1Audio.mp4"
+          }
+        },
+        {
+          "name": "refundasset2",
+          "imagePath": "../SmartMerchantAssets/refundprocess/refund2.glb",
+          "animation": "Animation",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -1.0364, "y": -3.02252, "z": -3.46246 },
+          "rotation": {
+            "x": -62.723,
+            "y": -171.366,
+            "z": 2.282
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/refund2Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/refund2Audio.mp4"
+          }
+        },
+        {
+          "name": "refundasset3",
+          "imagePath": "../SmartMerchantAssets/refundprocess/refund3.glb",
+          "animation": "Animation",
+          "scale": { "x": 0.034, "y": 0.034, "z": 0.034 },
+          "position": { "x": -1.0364, "y": -3.02252, "z": -3.46246 },
+          "rotation": {
+            "x": -62.723,
+            "y": -171.366,
+            "z": 2.282
+          },
+          "subsVideo": {
+            "videoElement": "../SmartMerchantAssets/videos/Dialogs/refund3Dialog.webm",
+            "audio": "../SmartMerchantAssets/videos/Dialogs/refund3Audio.mp4"
+          }
+        }
+      ]
+    }
+   }
+  }

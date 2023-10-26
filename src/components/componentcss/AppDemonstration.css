@@ -1,0 +1,392 @@
+.scene-container{
+    height:100%;
+    position:relative;
+    top:0%;
+    /* overflow: hidden;  */
+}
+
+.demo-play-btn{
+    height:4rem;
+    width:4rem;
+    background-color: brown;
+}
+/* .benifits-audio{
+    visibility: hidden;
+    height:10px;
+    width:100px;
+    position:absolute;
+} */
+.audio-element{
+    visibility: visible;
+    height:1px;
+    width:1px;
+    position:absolute;
+    opacity:0;
+    top:0%;
+    /* z-index:101; */
+}
+.smart-dropdown{
+    position:absolute;
+    display:flex;
+    top:10%;
+    left:4%;
+    z-index:101;
+    background-color:rgb(38, 52, 117);
+    border-radius: 3px;
+    border: 2px solid white;
+    padding:4px;
+    width:6rem;
+    color:rgb(255, 255, 255);
+    font-weight:bold;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+    justify-content:center;
+    font-size: 0.9rem;
+    /* align-items:flex-start; */
+}
+.dropdown-trigger {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+
+  .dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    display:none;
+    font-size: small;
+  }
+  .option-odd{
+    background-color:rgb(207, 213, 234);
+    color:black;
+  }
+  .option-even{
+    background-color:rgb(233, 235, 245);
+    color:black;
+  }
+  .dropdown-options.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown-option {
+    padding: 5px 10px;
+    /* padding-top:10px;
+    padding-bottom:10px;
+    align-items:center;
+    justify-content:center; */
+    cursor: pointer;
+  }
+  .dropdown-option:hover{
+    background-color:rgb(68, 114, 196);
+    color:white;
+  }
+.smart-dropdown:focus,.smart-dropdown:active{
+    border:none;
+}
+.smart-dropdown option{
+   background-color: rgb(15, 64, 144);
+   /* background-image: linear-gradient(to bottom right, rgb(15, 64, 144), rgb(5, 36, 121)); */
+}
+.appdemo-popup-overlay{
+    background-color:rgb(15, 64, 144);
+}
+.appdemo-popup-content{
+    background-color:rgb(15, 64, 144);
+    width:250px;
+}
+.appdemo-popup-container{
+    background-color:rgb(15, 64, 144);
+    color:white;
+    width:400px;
+    text-align:inherit;
+    align-items: center;
+    justify-content: center;
+}
+.sound-popup-container{
+  text-align:center;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.appdemo-popup-text{
+ width:390px;
+ justify-content: center;
+ text-align: justify;
+ margin:auto;
+ font-size: small;
+ align-items: center;
+}
+.sound-popup-text{
+  text-align: center;
+}
+.popup-btn-container{
+    display:flex;
+    width:100%;
+    align-items:center;
+    justify-content: center;
+    margin-top:5px;
+
+}
+.popup-content {
+    margin: auto;
+    background: rgb(15, 64, 144);;
+    width: 400px;
+    padding: 5px;
+    border: 2px solid #ffffff
+}
+
+[role=tooltip].popup-content {
+    width: 400px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .16);
+    border-radius: 5px
+}
+
+.popup-overlay {
+    background: rgba(0, 0, 0, .5)
+}
+
+[data-popup=tooltip].popup-overlay {
+    background: transparent
+}
+
+.popup-arrow {
+    -webkit-filter: drop-shadow(0 -3px 3px rgba(0, 0, 0, .16));
+    filter: drop-shadow(0 -3px 3px rgba(0, 0, 0, .16));
+    color: #fff;
+    stroke-width: 2px;
+    stroke: #d7d7d7;
+    stroke-dasharray: 30px;
+    stroke-dashoffset: -54px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0
+}
+.appdemo-popup-btn{
+    border:2px solid rgb(37, 53, 113);
+    background-color:white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8%;
+    padding:3px;
+    width:25%;
+    height:25px;
+    color:rgb(37, 53, 113);
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: small;
+}
+.appdemo-popup-btn:hover{
+    background-color:rgb(37, 53, 113);
+    color:white;
+    border:2px solid white;
+}
+.blink-button {
+    animation: blink-animation 1s infinite; /* Apply the blink animation */
+  }
+  
+  @keyframes blink-animation {
+    0%, 100% {
+      opacity: 1;
+      background-color:rgb(68, 114, 196);
+       /* Button is visible */
+    }
+    50% {
+      opacity: 0; /* Button is hidden */
+    }
+  }
+  .previous-skip-container{
+    display:flex;
+    flex-direction: column;
+    height:100%;
+    width:max-content;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right:4%;
+    top:10%;
+
+
+  }
+  .next-video-btn{
+    z-index:103;
+  }
+  .previous-video-btn,.app-demo-logout,.next-btn {
+    display: flex;
+    /* position:absolute; */
+    /* margin-left:15px; */
+    background-color:rgb(38, 52, 117);
+    border-radius: 3px;
+    border: 2px solid white;
+    padding:4px;
+    width:6rem;
+    color:rgb(255, 255, 255);
+    font-weight:bold;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+    justify-content:center;
+    /* left:85%;
+    top:40%; */
+    z-index:103;
+  }
+  .logout-position{
+    position:absolute;
+    left: 4%;
+    bottom:6.5%;
+  }
+  .previous-video-btn:hover,.app-demo-logout:hover{
+    background-color:rgb(213, 25, 24);
+  }
+  .next-btn{
+    /* top:40%; */
+  }
+  .previous-video-btn{
+    margin-top:10px;
+  }
+  .lobby-btn{
+    width:8rem;
+  }
+  .smart-dropdown-title{
+
+    font-weight: 600;
+  }
+  .dropdown-current{
+    background-color:rgb(68, 114, 196);
+    color:white;
+  }
+.appdemo-subs-container{
+  align-items: center;
+  top:85%;
+
+}
+.demo-subs-main-container{
+  /* background-image: url('../../SmartMerchantAssets/subs_bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; */
+    display: flex;
+    width:70%;
+    align-items: center;
+    justify-content:center;
+}
+.subs-align{
+  margin-right:0rem;
+}
+.subs-visible{
+  background-image: url('../../SmartMerchantAssets/subs_bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.demo-subs-span{
+  display: flex;
+  width:100%;
+  color:white;
+  font-size: 1.85rem;
+  font-weight: 600;
+  align-items: center;
+  justify-content:center;
+}
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
+ 
+    .demo-subs-span{
+      font-size: 1.1em;
+    }
+    .previous-video-btn,.next-btn,.lobby-btn,.app-demo-logout{
+      width:4rem;
+      font-size: xx-small;
+    }
+    .smart-dropdown{
+
+      display:flex;
+      /* height:1.5rem; */
+      width:6rem;
+      /* border-right:5px solid transparent; */
+      font-size: x-small;   
+      background-size: cover;
+  }
+  .subs-align{
+    margin-right:0rem;
+  }
+  /* .smart-dropdown-title{
+    font-size: 0.5rem;
+    margin-top:0.3rem;
+  } */
+}
+@media screen and (max-width: 1024px) {
+  .demo-subs-span{
+    font-size: 0.9rem;
+  }
+  /* .smart-dropdown-title{
+    font-size: 0.5rem;
+    margin-top:0.3rem;
+  } */
+
+.previous-video-btn,.next-btn,.lobby-btn,.app-demo-logout{
+  width:4rem;
+}
+.subs-align{
+  margin-right:0rem;
+}
+.smart-dropdown{
+  font-size: xx-small;  
+} 
+/* .smart-dropdown-title{
+  font-size: 0.8rem;
+  margin-top:0.8rem;
+} */
+}
+
+@media screen and (max-width: 2140px) and (min-width: 1801px)  {
+  /* .smart-dropdown-title{
+    margin-top:7px;
+    font-weight: 600;
+  } */
+
+
+
+}
+@media screen and (max-width: 1800px) and (min-width : 1538px) {
+ 
+  .demo-subs-span{
+    font-size: 1.6em;
+  }
+  .previous-video-btn,.next-btn,.lobby-btn,.app-demo-logout{
+    font-size: x-small;
+  }
+  /* .smart-dropdown{
+    font-size: medium;    
+} */
+/* .smart-dropdown-title{
+  font-size: 0.8rem;
+  margin-top:0.8rem;
+} */
+
+}
+@media screen and (max-width: 1537px) and (min-width : 1280px) {
+  .appdemo-dropdown-title{
+    margin-top:0.8rem;
+    font-size:0.8rem;
+  }
+  .demo-subs-span{
+    font-size: 1.4em;
+  }
+  /* .previous-video-btn,.next-btn,.lobby-btn,.app-demo-logout{
+    font-size: x-small;
+  }
+  .smart-dropdown{
+    font-size: medium;    
+}
+.smart-dropdown-title{
+  font-size: 0.8rem;
+  margin-top:0.8rem;
+} */
+
+}

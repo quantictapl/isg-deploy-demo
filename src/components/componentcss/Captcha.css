@@ -1,0 +1,74 @@
+.captcha-container{
+    display: flex;
+    justify-content: space-between;
+    width:20rem;
+    align-items: center;
+    
+}
+.captcha-img-container{
+    display: flex;
+    justify-content: space-evenly;   
+    align-items:center;
+}
+.user-captcha{
+    width:9rem;
+    padding:2px;
+    padding-left: auto;
+    padding-right: auto;
+    outline:none;
+    border:none;
+    
+}
+.captcha-text{
+    display: flex;
+    width:8rem;
+    height: 2rem;
+    font-size: xx-large;
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    padding:2px;
+    text-align: center;
+    align-items:center;
+    justify-content: center;
+    
+}
+.char0{
+    font-size: xx-large;
+    color:rgb(87, 86, 86);
+    font-style: italic;
+    font-weight: 700;
+}
+.char1{
+    font-size: large;
+    color:rgb(0, 0, 0);
+    font-style: oblique;
+    font-weight: 600;
+}
+.char2{
+    font-size: x-large;
+    color:rgb(65, 65, 65);
+    font-style: italic;
+    font-weight: 500;
+}
+.char3{
+    font-size: xx-large;
+    color:rgb(44, 44, 44);
+    font-style: normal;
+    font-weight: 200;
+}
+.char4{
+    font-size: x-large;
+    color:rgb(54, 54, 54);
+    font-style: normal;
+}
+.refresh-button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    margin-left:4px;
+}

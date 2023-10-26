@@ -1,0 +1,132 @@
+.demo-subs-container{
+    display: flex;
+    flex-direction: column;
+    position:absolute; 
+    top:83%; 
+    height:13vh;
+    width: 100vw;
+    z-index:100;
+    justify-content: center;
+    
+}
+.demo-subs-main-container-smart-intro{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  width:auto;
+}
+.demo-subs{ 
+    width: 80vw;
+    height: 10vh;
+    object-fit:cover;   
+}
+.demo-subs-sm{
+  margin-left: 4rem;
+}
+.subs-audio{
+  visibility: hidden;
+  height:1px;
+  width:1px;
+}
+.next-button-container{
+    display:flex;
+    flex-direction: column;
+    width:3vw;
+    justify-content:space-evenly;
+    height:11vh;
+    align-items: center;
+}
+.subs-button{
+   height:2rem;
+   width: 10rem;
+   animation: blinkAnimation 1s infinite;
+   align-items:center;
+   justify-content:space-between;
+}
+.subs-button:hover {
+    animation: none;
+    color:rgb(213, 25, 24);
+  }
+@keyframes blinkAnimation {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .subs-button:active{
+    background-color: grey;
+    animation:none;
+  }
+  .subs-button{
+    display: flex;
+    background-color:transparent;
+    border-radius: 3px;
+    border:none;
+    padding:2px;
+    /* width:2rem; */
+    height: 2;
+    color:rgb(38, 52, 117);
+    font-weight:bold;
+    justify-content:center;
+  }
+  .skip{
+    animation:none;
+  }
+  .button-interior{
+    display: flex;
+    width:40%;
+     align-items: center;
+     justify-content: space-around;
+     padding:2px;
+  }
+  .smart-icon{
+    height:25px;
+    width:25px;
+  }
+  .skip-icon{
+    height:25px;
+    width:25px;
+  }
+  .next-video-btn{
+    display: flex;
+    position:absolute;
+    margin-left:15px;
+    background-color:rgb(38, 52, 117);
+    border-radius: 3px;
+    border: 2px solid white;
+    padding:4px;
+    width:6rem;
+    height: 2;
+    color:rgb(255, 255, 255);
+    font-weight:bold;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+    justify-content:center;
+    left:90%;
+    top:-5%;
+  }
+  .next-video-btn:hover{
+    background-color:rgb(213, 25, 24);
+  }
+
+  @media screen and (max-width: 1537px) and (min-width : 1280px) {
+    .smart-icon{
+      height:15px;
+      width:15px;
+    } 
+    .smartm-dropdown-title{
+      font-size: 0.8rem;
+      margin-top:0.8rem;
+    }
+  }
+
+  /* @media screen and (max-width: 1537px) and (min-width : 1280px) {
+    .smartm-dropdown-title{
+      margin-top:0.8rem;
+    } 
+  } */
+  

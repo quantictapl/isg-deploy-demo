@@ -1,0 +1,200 @@
+.grad-bg{
+    background: linear-gradient(to right, white, grey,white );
+    z-index:1;
+    overflow: hidden;
+    position:relative;
+  }
+  .signup-bg{
+    background: linear-gradient(to bottom, rgb(197, 197, 197,1), rgb(255, 255, 255,1) );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    z-index:5;
+    overflow: hidden;
+  }
+  .honey-comb{
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgb(128, 128, 128,1),rgba(255, 255, 255, 0) );
+    background-image: url('../images/HoneyComb.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width:100%;
+    justify-content: center;
+    z-index:10;
+    fill-opacity: 0.8;
+    perspective: 200rem;
+    transform-origin:center;
+    position: relative;
+    
+  }
+
+  .signup-box {
+    background-image: url('../images/SignupBox.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: max-content;
+    height: 725px;
+    aspect-ratio: 18/25;
+    align-items:flex-start;
+    justify-content: center;
+    z-index:100;
+    display: flex;
+
+  }
+  .signup-content{
+    top:-5%;
+    left:1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index:120;
+    position:relative;
+    margin: auto;
+  }
+  .signup-content p{
+    color: rgb(212, 212, 136);
+    font-size: smaller;
+  }
+  .signup-isg-logo{
+    aspect-ratio: 6/4;
+    width: 6rem;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.15);
+    margin-bottom:1rem;
+  }
+  .signup-username, .signup-password{
+    background-color: rgb(233, 233, 233);
+    padding: 2px;
+    padding-left:1rem;
+    height: 1.5rem;
+    border-radius:5px;
+    border: none;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width:20rem;
+    font-size: small;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.15);
+  }
+  .signup-user{
+    margin-top:0;
+  }
+  .drop-container{
+    display: flex;
+    justify-content: space-between;
+    width:21rem;
+
+  }
+  .check-container-signup{
+    display:grid;
+    grid-template-columns: 1fr 14fr;
+    font-size:x-small;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: flex-start;
+    color:white;
+    margin-left:0%;
+    width:20.5rem;
+  }
+  
+  
+  .term{
+    white-space: nowrap;
+    -ms-grid-column-span: 12;
+    text-align:start;
+
+    margin-left:0;
+  }
+  .terms{
+    text-align: left;
+    margin-top: 3px;
+    white-space: normal;
+    width: 18rem;
+    word-wrap: break-word
+  }
+  .button{
+    background-color:rgb(199, 197, 197);
+    border-radius: 3px;
+    border: none;
+    padding:4px;
+    width:8rem;
+    height: 2rem;
+    color:white;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  .btn-container{
+    display: flex;
+    justify-content: space-between;
+    width:18rem;
+    margin-top:1rem;
+  }
+  .button:active{
+    background-color: grey;
+  }
+  .button:hover{
+    background-color:rgb(212, 212, 212);
+    color:black;
+  }
+
+  @keyframes rotate-and-slide {
+    0% {
+      transform: perspective(500rem) rotateY(60deg) translateX(-290%) scaleX(-50%)  scaleY(-50%);
+      opacity:0;
+      
+    }
+    49.9%{
+      opacity:0;
+    }
+    50% {
+      transform: perspective(500rem) rotateY(60deg) translateX(-290%) scaleX(-50%)  scaleY(-50%);
+      opacity:0;
+      
+    }
+    51%{
+      opacity:1;
+
+    }
+    99%{
+      transform: perspective(500rem) rotateY(5deg) translateX(0%) scaleX(100%) scaleY(100%) 
+    }
+    100% {
+      transform: perspective(500rem) rotateY(0deg) translateX(0%) scaleX(100%) scaleY(100%) 
+      
+    }
+  }
+  .drop-shadow{
+    z-index:90;
+    position:absolute;
+    bottom:17.5%;
+    left:19%;
+    animation:opacityInc 3s ease-in-out ;
+    width:30%;
+    height:auto;
+    opacity:0.5;
+
+  }
+  @keyframes opacityInc {
+    0% {
+      opacity:0;
+    }
+    95%{
+      opacity: 0;
+    }
+    100% {
+      opacity:0.5;
+      
+    }
+  }
+
+  .message,#message{
+    color:rgb(255, 255, 255);
+  }
+
+  

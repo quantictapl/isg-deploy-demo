@@ -1,0 +1,64 @@
+.scene-container{
+    height:100%;
+    position:relative;
+    top:0%;
+    overflow: hidden; 
+}
+.store-entity{
+    display: hidden;
+}
+.demo-play-btn{
+    height:4rem;
+    width:4rem;
+    background-color: brown;
+}
+.benifits-audio{
+    visibility: hidden;
+    height:1px;
+    width:1px;
+    position:absolute;
+}
+.loading-video{
+    height:100%;
+    width:100%;
+}
+.loading-container{
+    overflow:hidden;
+    display:flex;
+}
+body{
+  overflow:hidden;
+  box-sizing: border-box;
+}
+.blink-button {
+    animation: blink-animation 1s infinite; /* Apply the blink animation */
+  }
+  
+  @keyframes blink-animation {
+    0%, 50%, 100% {
+      opacity: 1; /* Button is visible */
+    }
+    25%, 75% {
+      opacity: 0; /* Button is hidden */
+    }
+  }
+  .logout-btn-smart-intro{
+    display: flex;
+    /* position:absolute; */
+    /* margin-left:15px; */
+    background-color:rgb(38, 52, 117);
+    border-radius: 3px;
+    border: 2px solid white;
+    padding:4px;
+    width:6rem;
+    color:rgb(255, 255, 255);
+    font-weight:bold;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+    justify-content:center;
+    /* left:85%;
+    top:40%; */
+    z-index:103;
+    position:absolute;
+    left: 4%;
+    bottom:10%;
+  }
