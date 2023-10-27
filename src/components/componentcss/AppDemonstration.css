@@ -108,8 +108,8 @@
     align-items: center;
     justify-content: center;
 }
-.sound-popup,#popup-2{
-  width:230px;
+.sound-popup{
+  width:230px !important;
 }
 .sound-popup-container{
   text-align:center;
@@ -132,7 +132,7 @@
   width:220px;
 }
 .sound-popup-content{
-  width:230px;
+  width:230px !important;
 }
 .popup-btn-container{
     display:flex;
@@ -300,6 +300,7 @@
   font-size: 1.85rem;
   font-weight: 600;
   align-items: center;
+  white-space:nowrap;
   justify-content:center;
 }
 @media screen and (max-width: 1280px) and (min-width: 1025px) {
@@ -357,6 +358,9 @@
     margin-top:7px;
     font-weight: 600;
   } */
+  .demo-subs-span{
+    font-size: 1.6em;
+  }
 
 
 
