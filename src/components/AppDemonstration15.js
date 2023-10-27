@@ -1286,7 +1286,7 @@ function AppDemonstration({
       >
         <div className="appdemo-popup-container sound-popup-container">
           <div className="appdemo-popup-text sound-popup-text">
-            Click Ok to enable Audio on this page
+            Click Ok to continue
           </div>
           <div className="popup-btn-container sound-popup-btn-container">
             <button className="appdemo-popup-btn" onClick={closePopupSound}>

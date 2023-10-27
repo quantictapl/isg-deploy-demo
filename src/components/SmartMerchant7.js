@@ -693,8 +693,9 @@ useEffect(()=>{
   };
   const handleLobbyClick = (event) => {
     event.stopPropagation();
-    navigate("/isglobby");
-     // Replace "/your-route" with the desired path
+    if(cameraRotationEnded){
+      navigate("/isglobby");
+    }
   };
   // useEffect(() => {
   //   const esyPlaceholderEntity = document.getElementById("model-placeholder");
@@ -729,20 +730,23 @@ useEffect(()=>{
          }
     
     return () => {
-      // esy.removeEventListener("model-loaded", checkModelLoaded);
+      if(cameraRotationEnded){
+       esy.removeEventListener("model-loaded", checkModelLoaded);
     } 
+  }
   }, [cameraRotationEnded,audioMute]);
   useEffect(()=>{
+
     const esy = document.getElementById("esy");
-    if(!audioMute){
+    if(!audioMute && cameraRotationEnded){
         esy.setAttribute('animation-mixer', 'clip:; loop: repeat; repetitions: Infinity;')
     }
-  },[audioMute])
+  },[audioMute,cameraRotationEnded])
   
 
   return (
     <div className="scene-container" onClick={() => {
-        setAudioMute(false);
+        // setAudioMute(false);
       }}>
          <Popup
         className="appdemo-popup sound-popup"
@@ -752,7 +756,7 @@ useEffect(()=>{
       >
         <div className="appdemo-popup-container sound-popup-container">
           <div className="appdemo-popup-text sound-popup-text">
-            Click Ok to enable Audio on this page
+            Click Ok to continue
           </div>
           <div className="popup-btn-container sound-popup-btn-container">
             <button className="appdemo-popup-btn" onClick={closePopupSound}>

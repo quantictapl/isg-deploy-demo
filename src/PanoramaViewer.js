@@ -11,7 +11,7 @@ function PanoramaViewer({models,videos,images}) {
   const [loading,setLoading]=useState(true);
   const globe=models.Model1;
   const tv=videos.Video1;
-  localStorage.setItem('lastVisitedPage', "/panorama");
+  localStorage.setItem('lastVisitedPage', "/isglobby");
   // const rough="https://isg-assets.s3.ap-south-1.amazonaws.com/RoughLobby.jpg";
   // const globe="https://isg-assets.s3.ap-south-1.amazonaws.com/globeuu.glb";
   useEffect(() => {
