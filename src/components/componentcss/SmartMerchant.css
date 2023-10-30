@@ -60,5 +60,9 @@ body{
     z-index:103;
     position:absolute;
     left: 4%;
-    bottom:10%;
+    bottom:12%;
+  }
+  .smartmerchant-scene-container .smartmerchant-volume-range-position{
+    left: 4%;
+    bottom:8%;
   }

@@ -30,6 +30,7 @@ import "./IsyControlledAnimation"
 import "./Customloading"
 import isySpeech from "../SmartMerchantAssets/videos/isy_speech1.webm"
 import esyDummy from "../SmartMerchantAssets/esy_dummy.glb"
+import { HiOutlineVolumeOff, HiOutlineVolumeUp } from "react-icons/hi";
 // const esy="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Esy.glb"
 const smartIntro= "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/videos/dialogs/smartintro.webm";
 const smartIntroAudio= "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/videos/dialogs/smartintroAudio.mp4";
@@ -125,7 +126,7 @@ function SmartMerchant({ esy,videos,smartmerchantBg}) {
   const isySpeechVideoRef=useRef(null);
   const [isSceneLoaded,setIsSceneLoaded]=useState(false);
   const [isPopupOpenSound, setIsPopupOpenSound] = useState(false);
- 
+  const [volumeSliderValue, setSliderValue] = useState(0.5); 
   localStorage.setItem('lastVisitedPage', "/smartmerchant");
 
   const openPopupSound = () => {
@@ -742,12 +743,34 @@ useEffect(()=>{
         esy.setAttribute('animation-mixer', 'clip:; loop: repeat; repetitions: Infinity;')
     }
   },[audioMute,cameraRotationEnded])
-  
+  const handleSliderChange = (event) => {
+    setSliderValue(event.target.value);
+  };
+  useEffect(()=>{
+    const subsAudio=subsAudioRef.current;
+    const tvVideo=videoRef.current;
+    subsAudio.volume=volumeSliderValue;
+    tvVideo.volume=volumeSliderValue;
+  },[volumeSliderValue])
 
   return (
-    <div className="scene-container" onClick={() => {
+    <div className="scene-container smartmerchant-scene-container" onClick={() => {
         // setAudioMute(false);
       }}>
+       <div className=" smartmerchant-volume-range-position volume-slider-container ">
+        <HiOutlineVolumeOff className="icons range-volume-icon"/>
+        <input
+          type="range"
+          min="0"
+          max="1"
+          value={volumeSliderValue}
+          step="0.1"
+          onChange={handleSliderChange}
+          class="volume-slider"
+          id="volumeRange"
+        ></input>
+        <HiOutlineVolumeUp className="icons range-volume-icon" />
+      </div>
          <Popup
         className="appdemo-popup sound-popup"
         open={isPopupOpenSound}

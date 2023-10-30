@@ -174,7 +174,7 @@ function Login() {
                 variants={opacityInc}
               ></motion.div>
               <img className="isg-logo" src={isgLogo} alt="Logo" />
-              <input className="username" type="text" placeholder="Username" value={username} onChange={event=>setUsername(event.target.value)}  />
+              <input className="username" type="text" placeholder="Email Address" value={username} onChange={event=>setUsername(event.target.value)}  />
               <input
                 className="password"
                 type="password"

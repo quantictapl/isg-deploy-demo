@@ -27,7 +27,7 @@ function Captcha({ onCaptchaValidChange }) {
   return (
     <div className='captcha-container'>
       <input
-        className='user-captcha'
+        className='user-captcha signup-username'
         type='text'
         placeholder='Enter CAPTCHA'
         value={userInput}

@@ -26,6 +26,7 @@ import { FaVolumeUp } from "react-icons/fa";
 import { FaVolumeMute } from "react-icons/fa";
 import CustomLoadingScreen from "./components/CustomLoadingScreen";
 import "./components/Customloading"
+import { HiOutlineVolumeOff, HiOutlineVolumeUp } from "react-icons/hi";
 
 function Panorama({ lobbyBg, globe, ellie,tv }) {
   const tvVid=tv;
@@ -50,6 +51,7 @@ function Panorama({ lobbyBg, globe, ellie,tv }) {
   const [playVideo, setPlayVideo] = useState(false);
   const [light, setLight] = useState(false);
   const [playXtVideo, setPlayXtVideo] = useState(true);
+  const [volumeSliderValue, setSliderValue] = useState(0.5); 
 
   // let cameraRig; // Declare a global variable
 
@@ -250,8 +252,29 @@ function Panorama({ lobbyBg, globe, ellie,tv }) {
   const rotation1 = " 0 10 0";
   const defaultRotation = "0 -45 0";
   localStorage.setItem('lastVisitedPage',"/isglobby");
+  const handleSliderChange = (event) => {
+    setSliderValue(event.target.value);
+  };
+  useEffect(()=>{
+    const video=tvVideoRef.current;
+    video.volume=volumeSliderValue;
+  },[volumeSliderValue])
   return (
-    <div className="scene-container">
+    <div className="scene-container lobby-scene-container">
+       <div className=" lobby-volume-range-position volume-slider-container ">
+        <HiOutlineVolumeOff className="icons range-volume-icon"/>
+        <input
+          type="range"
+          min="0"
+          max="1"
+          value={volumeSliderValue}
+          step="0.1"
+          onChange={handleSliderChange}
+          class="volume-slider"
+          id="volumeRange"
+        ></input>
+        <HiOutlineVolumeUp className="icons range-volume-icon" />
+      </div>
       <HideVRButton />
       <div className="videoContainer" ref={videoContainerRef}>
         <video

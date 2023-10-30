@@ -1,7 +1,7 @@
 .captcha-container{
     display: flex;
     justify-content: space-between;
-    width:20rem;
+    width:21rem;
     align-items: center;
     
 }
@@ -13,7 +13,7 @@
 .user-captcha{
     width:9rem;
     padding:2px;
-    padding-left: auto;
+    padding-left: 1rem;
     padding-right: auto;
     outline:none;
     border:none;

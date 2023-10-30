@@ -10,20 +10,28 @@
   }
   
   .logout {
-    z-index: 1;
-    position: absolute;
-    left: 5%;
-    top: 80%;
-    border: 2px solid rgb(255, 255, 255);
-    padding: 0.3em;
-    font-size: larger;
-    font-weight: 500;
-    color: rgb(255, 255, 255);
-    /* background: transparent; */
-    border-radius: 4%;
-    opacity: 0.7;
-    background-color: rgb(37, 53, 113);
+    display: flex;
+    /* position:absolute; */
+    /* margin-left:15px; */
+    background-color:rgb(38, 52, 117);
+    border-radius: 3px;
+    border: 2px solid white;
+    padding:4px;
+    width:6rem;
+    color:rgb(255, 255, 255);
+    font-weight:bold;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+    justify-content:center;
+    /* left:85%;
+    top:40%; */
+    z-index:300;
+    position:absolute;
+    left: 4%;
+    bottom:10%;
   }
+ 
+
+  
   
   .logout:hover {
     background-color: rgb(180, 180, 180);
@@ -333,4 +341,9 @@
 /* .a-loader-title {
   color: red;
 } */
+.lobby-scene-container .lobby-volume-range-position{
+  left:4%;
+  bottom:5%;
+  z-index:300;
+}
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { motion } from "framer-motion";
 import "./Signup.css";
 import isgLogo from "../images/isglogo.png";
@@ -70,6 +70,13 @@ function Signup() {
   const [isCaptchaValid, setIsCaptchaValid] = useState(false);
   const [isTermsChecked, setIsTermsChecked] = useState(false);
   const navigate=useNavigate();
+  const initialFormData = {
+    name: "",
+    email: "",
+    company: "",
+    // Add other fields and their default values here
+  };
+  const [formData, setFormData] = useState(initialFormData);
   localStorage.setItem('lastVisitedPage', "/opening");
   const handleGenderChange = (selectedOption) => {
     setGender(selectedOption);
@@ -99,7 +106,9 @@ function Signup() {
       setMessage("Please accept the terms and conditions");
       return;
     }
+    localStorage.removeItem('formData');
     setMessage(null);
+    
     const requestConfig = {
       headers: {
         "x-api-key": process.env.REACT_APP_X_API_KEY,
@@ -122,7 +131,7 @@ function Signup() {
       .post(registerUrl, requestBody, requestConfig)
       .then((response) => {
         //console.log("Response: ", response); // Add this console.log statement
-        setMessage("Registeration Successful");
+        setMessage("Registration Successful");
 
       })
       .catch((error) => {
@@ -136,6 +145,66 @@ function Signup() {
         }
       });
   };
+  const handleNameChange = (event) => {
+    const updatedName = event.target.value;
+    setName(updatedName); // Update the state
+    const updatedFormData = { ...formData, name: updatedName };
+    setFormData(updatedFormData); // Update the form data state
+    localStorage.setItem('formData', JSON.stringify(updatedFormData)); // Update local storage
+  };
+  const handleEmailChange = (event) => {
+    const updatedEmail = event.target.value;
+    setEmail(updatedEmail); // Update the state
+    const updatedFormData = { ...formData, email: updatedEmail };
+    setFormData(updatedFormData); // Update the form data state
+    localStorage.setItem('formData', JSON.stringify(updatedFormData)); // Update local storage
+  };
+  const handleCompanyChange = (event) => {
+    const updatedCompany = event.target.value;
+    setCompany(updatedCompany); // Update the state
+    const updatedFormData = { ...formData, company: updatedCompany };
+    setFormData(updatedFormData); // Update the form data state
+    localStorage.setItem('formData', JSON.stringify(updatedFormData)); // Update local storage
+  };
+  const handleDesignationChange = (event) => {
+    const updatedDesignation = event.target.value;
+    setDesignation(updatedDesignation); // Update the state
+    const updatedFormData = { ...formData, designation: updatedDesignation };
+    setFormData(updatedFormData); // Update the form data state
+    localStorage.setItem('formData', JSON.stringify(updatedFormData)); // Update local storage
+  };
+  const handleMobileChange = (event) => {
+    const updatedPhone = event.target.value;
+    setPhone(updatedPhone); // Update the state
+    const updatedFormData = { ...formData, phone: updatedPhone };
+    setFormData(updatedFormData); // Update the form data state
+    localStorage.setItem('formData', JSON.stringify(updatedFormData)); // Update local storage
+  };
+  const handlePasswordChange = (event) => {
+    const updatedPassword = event.target.value;
+    setPassword(updatedPassword); // Update the state
+    const updatedFormData = { ...formData, password: updatedPassword };
+    setFormData(updatedFormData); // Update the form data state
+    localStorage.setItem('formData', JSON.stringify(updatedFormData)); // Update local storage
+  };
+  useEffect(() => {
+    const storedData = localStorage.getItem('formData');
+    if (storedData) {
+      const parsedData = JSON.parse(storedData);
+      setFormData(parsedData); // Update the form data state
+      setName(parsedData.name);
+      setEmail(parsedData.email);
+      setCompany(parsedData.company);
+      setDesignation(parsedData.designation);
+      setPhone(parsedData.phone);
+      setPassword(parsedData.password); // Update the state for each field
+      // Set other fields as needed
+    }
+  }, []);
+  if(message && message==="Registration Successful"){
+    navigate("/login");
+  }
+ 
 
   return (
     <div className="grad-bg">
@@ -167,14 +236,14 @@ function Signup() {
                 type="text"
                 placeholder="Name"
                 value={name}
-                onChange={(event) => setName(event.target.value)}
+                onChange={handleNameChange}
               />
               <input
                 className="signup-username"
                 type="text"
                 placeholder="Company"
                 value={company}
-                onChange={(event) => setCompany(event.target.value)}
+                onChange={handleCompanyChange}
               />
               <div className="drop-container">
                 <GenderDropdown onGenderChange={handleGenderChange}/>
@@ -185,31 +254,33 @@ function Signup() {
                 type="text"
                 placeholder="Designation"
                 value={designation}
-                onChange={(event) => setDesignation(event.target.value)}
+                onChange={handleDesignationChange}
               />
               <input
                 className="signup-username"
                 type="email"
                 placeholder="Email"
                 value={email}
-                pattern=".+@(.+\.(com|in|org))"
+                pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
                 size="64" maxLength="64"
-                title="Please provide a valid email address ending in .com, .in, or .org."
-                onChange={(event) => setEmail(event.target.value)}
+                title="Please provide a valid email address."
+                onChange={handleEmailChange}
               />
               <input
                 className="signup-password"
                 type="password"
                 placeholder="Password"
                 value={password}
-                onChange={(event) => setPassword(event.target.value)}
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}$"
+                title="Your password must contain at least 8 characters, including uppercase and lowercase letters, numbers, and special characters."
+                onChange={handlePasswordChange}
               />
               <input
                 className="signup-username"
                 type="number"
                 placeholder="Mobile"
                 value={phone}
-                onChange={(event) => setPhone(event.target.value)}
+                onChange={handleMobileChange}
               />
               <Captcha onCaptchaValidChange={handleCaptchaValidChange} />
               <div className="check-container-signup">
