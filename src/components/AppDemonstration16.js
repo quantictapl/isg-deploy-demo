@@ -1304,7 +1304,7 @@ function AppDemonstration({
           </div>
         </div>
       </Popup>
-      <div className="volume-slider-container">
+      <div className="volume-slider-container" style={{display: isSceneLoaded ? "flex": "none"}}>
         <HiOutlineVolumeOff className="icons range-volume-icon"/>
         <input
           type="range"

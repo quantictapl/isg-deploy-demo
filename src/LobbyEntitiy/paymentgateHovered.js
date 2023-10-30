@@ -72,8 +72,8 @@ function PaymentGateHovered() {
              material="shader:standard; opacity:1; brightness: 5; emissive:white; emissiveIntensity:-2; color:white;
              font: bold;"
                text="value: Our PCI-DSS certified white label payment gateway solution allows you to unleash your true potential and grow your business online, immediately accepting payments without any investment in infrastructure or delays due to complex regulatory compliance. Our state-of-the-art platform can be shaped to match your business needs with dynamic and scalable composable services.;
-               align: left; width: 1; wrapCount: 55;
-               letterSpacing:1.5;"
+               align: left; width: 1;  whiteSpace:nowrap; wrapCount: 65; xOffset:0 anchor:align;
+               letterSpacing:2;"
                position="0.97 0.04 -1.1"
                raycaster="objects: [gui-interactable]"
                scale="0.8 0.8 0.8"

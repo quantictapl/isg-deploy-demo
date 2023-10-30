@@ -757,7 +757,7 @@ useEffect(()=>{
     <div className="scene-container smartmerchant-scene-container" onClick={() => {
         // setAudioMute(false);
       }}>
-       <div className=" smartmerchant-volume-range-position volume-slider-container ">
+       <div className=" smartmerchant-volume-range-position volume-slider-container" style={{display: isSceneLoaded ? "flex": "none"}}>
         <HiOutlineVolumeOff className="icons range-volume-icon"/>
         <input
           type="range"

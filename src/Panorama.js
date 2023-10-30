@@ -261,7 +261,7 @@ function Panorama({ lobbyBg, globe, ellie,tv }) {
   },[volumeSliderValue])
   return (
     <div className="scene-container lobby-scene-container">
-       <div className=" lobby-volume-range-position volume-slider-container ">
+       <div className=" lobby-volume-range-position volume-slider-container" style={{display: isSceneLoaded ? "flex": "none"}}>
         <HiOutlineVolumeOff className="icons range-volume-icon"/>
         <input
           type="range"

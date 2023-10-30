@@ -82,7 +82,7 @@ function SmartgateHover() {
         material="shader:standard; opacity:1; brightness: 5; emissive:white; emissiveIntensity:-2; color:white;
         font: bold;"
           text="value: ISGPay SmartMerchant is an all-purpose payments acceptance application, otherwise known as an omnichannel. Popular modes of payment like QR Payments, Contactless or Tap and Pay using Credit, debit & prepaid cards, and Link Payments or Requests to Pay sent via SMS or email are all enabled in the app.; 
-          align: left; width: 1.08; wrapCount: 55;"
+          align:left; letterSpacing:2; width: 1.09; whiteSpace:nowrap; wrapCount: 58; xOffset:0 anchor:align;"
           position="0.35 0.04 -1.5"
           raycaster="objects: [gui-interactable]"
           scale="0.8 0.8 0.8"
@@ -90,8 +90,6 @@ function SmartgateHover() {
         ></a-entity>
         
         </>
-        
-    
     )}
     </>
    
