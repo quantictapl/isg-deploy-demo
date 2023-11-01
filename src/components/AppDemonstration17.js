@@ -11,7 +11,7 @@ import HideVRButton from "./HideVRButton";
 import Popup from "reactjs-popup";
 // import "./componentcss/SmartMerchant.css";
 import "aframe-event-set-component";
-import { assetJson } from "./demoJsonTesting2";
+import { assetJson } from "./demoJsonTesting3";
 import esyDummy from "../SmartMerchantAssets/esy_dummy.glb";
 import isySpeech from "../SmartMerchantAssets/videos/isy_speech1.webm";
 import isyHandraise from "../SmartMerchantAssets/videos/isy_handraise.webm";
@@ -1578,7 +1578,7 @@ function AppDemonstration({
                 />
 
                 {/*no inspector because of img*/}
-                <a-entity
+                {/* <a-entity
                   lazy="true"
                   id="phone-img"
                   material={`shader: flat;  alphaTest:0.5; src:${currentPhoneImage.imagePath};   transparent: true;`}
@@ -1595,7 +1595,7 @@ function AppDemonstration({
                   position={`${currentPhoneImage.phoneImg.position.x} ${currentPhoneImage.phoneImg.position.y} ${currentPhoneImage.phoneImg.position.z}`}
                   rotation={`${currentPhoneImage.phoneImg.rotation.x} ${currentPhoneImage.phoneImg.rotation.y} ${currentPhoneImage.phoneImg.rotation.z}`}
                   scale={`${currentPhoneImage.phoneImg.scale.x} ${currentPhoneImage.phoneImg.scale.y} ${currentPhoneImage.phoneImg.scale.z}`}
-                ></a-entity>
+                ></a-entity> */}
                 <a-entity
                   id="phone-video-in"
                   material={`shader: flat; alphaTest: 0.5; src:#video-in-src; transparent: true`}
@@ -1627,7 +1627,7 @@ function AppDemonstration({
                         : `0 0 0`
                     }
                     rotation="-46.78658763479276 -10.097808181385629 8.462013676287128"
-                    position="-0.36309 -3.12602 0.50687"
+                    position="-0.11009 -3.12602 0.50687"
                     animation-mixer="clip: Animation"
                   ></a-entity>
                 </>
@@ -1641,7 +1641,7 @@ function AppDemonstration({
                     material={`shader: flat; color: white; transparent: true; src:#arrow;`}
                     // visible={((currentDivision === "paymentmethod" && currentPhoneAssetIndex===3) || (currentDivision === "refundprocess" && currentPhoneAssetIndex===2)) ? "true" : "false"}
                     geometry="primitive: plane; width: 5.45; height: 2.96"
-                    position="-0.65925 0.12821 -1.37255"
+                    position="-0.35925 0.12821 -1.37255"
                     rotation="0.9241809235460178 -12.21488723439402 -2.7146740333298403"
                     scale="0.21033 0.21033 0.21033"
                   ></a-entity>
@@ -1654,9 +1654,9 @@ function AppDemonstration({
               ref={animationButtonRef}
               material="shader: flat; color:white; side: double; transparent: true; opacity: 0.5; src:#buttonvideo;"
               geometry="primitive: circle; radius: 0.2; theta-length: 360"
-              position={`${currentPhoneImage.buttonPosition.x} ${currentPhoneImage.buttonPosition.y} -0.86971`}
+              position={`${currentPhoneImage.buttonPosition.x} ${currentPhoneImage.buttonPosition.y} -0.690`}
               rotation="0 -180 0"
-              scale="-0.2 0.2 0.2"
+              scale="-0.15 0.15 0.15"
               // visible={buttonVisibilityAttribute}
               // onClick={handleAnimationClick}
               event-set__mouseenter="_event: mouseenter; material.opacity: 0.9; textEntity.opacity:0.7; text.color:orange;"

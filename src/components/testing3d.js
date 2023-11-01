@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import HideVRButton from "./HideVRButton";
 import smartmerchant from "../WithTable.jpg";
 // import "./componentcss/SmartMerchant.css";
-// import "aframe-inspector";
+ //import "aframe-inspector";
 import "aframe-event-set-component";
 import isySpeech from "../SmartMerchantAssets/videos/isy_speech.webm"
 // import esy from "../SmartMerchantAssets/isy_hand.glb";
@@ -75,14 +75,14 @@ import "./componentcss/AppDemonstration.css";
 // import refundimg3 from "../SmartMerchantAssets/refundprocess/refundImg3.png";
 // import refundmobile from "../SmartMerchantAssets/refundprocess/refundmobile.glb";
 // import apploading1 from "../SmartMerchantAssets/apploading1.glb";
-// import appHandSingle from  "../SmartMerchantAssets/appintro/app_hand_single.glb"
-// import appHandPanSingle from "../SmartMerchantAssets/userreg/app_hand_pan_single.glb";
-// import appHandCardSingle from "../SmartMerchantAssets/paymentmethod/app_hand_card_single.glb";
+// import appHandSingle from  "../SmartMerchantAssets/apploading/app_hand_single.glb"
+// import appHandPanSingle from "../SmartMerchantAssets/apploading/app_hand_pan_single.glb";
+// import appHandCardSingle from "../SmartMerchantAssets/apploading/app_hand_card_single.glb";
 import "./CameraRotationLimit"
 import * as AFRAME from 'aframe';
-const appHandSingle="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_single.glb"
-const appHandPanSingle="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_pan_single.glb"
-const appHandCardSingle="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_card_single.glb"
+// const appHandSingle="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_single.glb"
+// const appHandPanSingle="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_pan_single.glb"
+// const appHandCardSingle="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_card_single.glb"
 
 const qrAudio="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/qrAudio.mp3"
 const appLoading2Audio="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/apploading2Audio.mp3";
@@ -334,6 +334,46 @@ function Testing3d({models}) {
         
         {/* <a-entity id="phone-light-1" light="type: spot; castShadow: true; intensity: 5; distance: 200; color: #ffffff; penumbra: 1; angle: 40; groundColor: #ffffff; shadowCameraRight: 7.22; decay: -0.33" position="0.02127 1.151 -0.60992" rotation="-77.21523021860052 129.48044029043422 60.95468799278776" scale="0.2 0.2 0.2"></a-entity>
         <a-entity id="phone-light-2" light="type: spot; castShadow: true; intensity: 2.38; distance: 197.68; color: #a0d8e3; penumbra: 0.13; angle: 40; groundColor: #ffdc2e; shadowCameraRight: 7.22; decay: -0.66" position="-0.02859 4.44158 1.81392" rotation="-64.51791252070635 20.737061479169885 172.13084560217757" scale="0.2 0.2 0.2"></a-entity> */}
+          {/* <a-entity
+                  id="phone-asset"
+                  gltf-model={appHandSingle}
+                  scale="0.034 0.034 0.034"
+                  position=" -0.97307 -3.08774 -3.43762 "
+                  rotation="x: -61.526499872328316 -169.76051920372137 -0.8416750010471793"
+                  // shadow="cast:true;"
+                  // visible={currentPhoneAsset.imagePath==="appHandCardSingle"?true:false}
+                 
+                  animation-mixer= "clip:;loop:repeat;repetitions:Infinity;"
+                  // animation-mixer={animationClicked ? `clip:${currentPhoneAsset.animation};loop:repeat;repetitions:Infinity;` : ""}
+                /> */}
+                {/* <a-entity
+                  lazy="true"
+                  id="phone-asset"
+     
+                  gltf-model={appHandCardSingle}
+                  scale=""
+                  position=""
+                  rotation=""
+                  // shadow="cast:true;"
+                  // visible={currentPhoneAsset.imagePath==="appHandCardSingle"?true:false}
+
+                  animation-mixer= "clip:;loop:repeat;repetitions:Infinity;"
+                />
+                <a-entity
+                  lazy="true"
+                  id="phone-asset"
+
+                  gltf-model={appHandPanSingle}
+                  scale=""
+                  position=""
+                  rotation=""
+                  animation-mixer= "clip:;loop:repeat;repetitions:Infinity;"
+                  // shadow="cast:true;"
+                  // visible={currentPhoneAsset.imagePath==="appHandPanSingle"?true:false}
+    
+
+                  // animation-mixer={animationClicked ? `clip:${currentPhoneAsset.animation};loop:repeat;repetitions:Infinity;` : ""}
+                /> */}
        <a-entity
               id="phone-light-1"
               light="type: spot; castShadow: true; intensity: 1.5; distance: 200; color: #ffffff; penumbra: 1; angle: 40; groundColor: #ffffff; shadowCameraRight: 7.22; decay: -0.33"
@@ -467,6 +507,7 @@ function Testing3d({models}) {
             rotation="2.8447354528245374 -0.4526366581533504 -0.1753250853100319"
             scale="0.13 0.13 0.13"
           ></a-entity>
+        
         <a-assets>
           {/* <img id="tv-border" src={tvImg} alt="" /> */}
           <img id="qr-code" src={qrcode} alt=""/>
@@ -575,7 +616,7 @@ function Testing3d({models}) {
           shadow="cast:true; receive:false;"
           animation-mixer="clip:Animation;loop:repeat;repetitions:Infinity;"
         />
-        <a-entity
+        {/* <a-entity
           id="model-placeholder"
           material="shader: flat;  src:#isy-speech;  transparent: true"
           geometry="primitive: plane; width: 0.5; height: 2.96"
@@ -587,7 +628,7 @@ function Testing3d({models}) {
           rotation="0 -8.586  0"
           scale="36.297 4.146 3.495"
         ></a-entity>
-        
+         */}
         <a-entity id="menu"  position="25.861 11.406 28.091" rotation="0 25.281 0">
           <a-entity
 
