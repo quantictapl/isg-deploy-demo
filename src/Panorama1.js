@@ -26,6 +26,8 @@ import { FaVolumeMute } from "react-icons/fa";
 import CustomLoadingScreen from "./components/CustomLoadingScreen";
 import "./components/Customloading"
 
+
+
 function Panorama({ lobbyBg, globe, ellie,tv }) {
   const tvVid=tv;
   console.log(tv);
