@@ -80,86 +80,86 @@ import "./componentcss/AppDemonstration.css";
 // import appHandCardSingle from "../SmartMerchantAssets/apploading/app_hand_card_single.glb";
 import "./CameraRotationLimit"
 import * as AFRAME from 'aframe';
-// const appHandSingle="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_single.glb"
-// const appHandPanSingle="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_pan_single.glb"
-// const appHandCardSingle="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_card_single.glb"
+// const appHandSingle="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_single.glb"
+// const appHandPanSingle="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_pan_single.glb"
+// const appHandCardSingle="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_card_single.glb"
 
-const qrAudio="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/qrAudio.mp3"
-const appLoading2Audio="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/apploading2Audio.mp3";
-const appLoading3Audio="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/apploading3Audio.mp3";
-const appIntro1Audio="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/AppIntro1Audio.mp3";
-const appIntro2Audio="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/AppIntro2Audio.mp3"
+const qrAudio="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/qrAudio.mp3"
+const appLoading2Audio="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/apploading2Audio.mp3";
+const appLoading3Audio="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/apploading3Audio.mp3";
+const appIntro1Audio="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/AppIntro1Audio.mp3";
+const appIntro2Audio="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/AppIntro2Audio.mp3"
 
-const userreg1Audio="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/userreg1Audio.mp3";
-const userreg2Audio="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/userreg2Audio.mp3";
-const userreg3Audio="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/userreg3Audio.mp3"
+const userreg1Audio="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/userreg1Audio.mp3";
+const userreg2Audio="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/userreg2Audio.mp3";
+const userreg3Audio="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/userreg3Audio.mp3"
 
-const  onboarding1Audio="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/onboarding1Audio.mp3"
-const  onboarding2Audio="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/onboarding2Audio.mp3"
+const  onboarding1Audio="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/onboarding1Audio.mp3"
+const  onboarding2Audio="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/onboarding2Audio.mp3"
 
-const paymentacceptance1Audio ="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/paymentAcceptance1Audio.mp3";
-const paymentacceptance2Audio ="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/paymentAcceptance2Audio.mp3";
+const paymentacceptance1Audio ="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/paymentAcceptance1Audio.mp3";
+const paymentacceptance2Audio ="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/paymentAcceptance2Audio.mp3";
 
-const paymentmethod1Audio="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/payment1Audio.mp3"
-const paymentmethod2Audio="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/payment2Audio.mp3"
-const paymentmethod3Audio="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/payment3Audio.mp3"
-const paymentmethod4Audio="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/payment4Audio.mp3"
-const paymentmethod5Audio="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/payment5Audio.mp3"
-const paymentmethod6Audio="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/payment6Audio.mp3"
-const paymentmethod7Audio="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/payment7Audio.mp3"
+const paymentmethod1Audio="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/payment1Audio.mp3"
+const paymentmethod2Audio="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/payment2Audio.mp3"
+const paymentmethod3Audio="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/payment3Audio.mp3"
+const paymentmethod4Audio="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/payment4Audio.mp3"
+const paymentmethod5Audio="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/payment5Audio.mp3"
+const paymentmethod6Audio="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/payment6Audio.mp3"
+const paymentmethod7Audio="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/payment7Audio.mp3"
 
-const rtp1Audio = "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/rtp1Audio.mp3";
-const rtp2Audio = "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/rtp2Audio.mp3";
-const rtp3Audio = "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/rtp3Audio.mp3";
-const rtp4Audio = "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/rtp4Audio.mp3";
+const rtp1Audio = "https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/rtp1Audio.mp3";
+const rtp2Audio = "https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/rtp2Audio.mp3";
+const rtp3Audio = "https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/rtp3Audio.mp3";
+const rtp4Audio = "https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/rtp4Audio.mp3";
 
-const recpay1Audio= "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/recpay1Audio.mp3";
-const recpay2Audio= "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/recpay2Audio.mp3";
-const recpay3Audio= "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/recpay3Audio.mp3";
+const recpay1Audio= "https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/recpay1Audio.mp3";
+const recpay2Audio= "https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/recpay2Audio.mp3";
+const recpay3Audio= "https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/recpay3Audio.mp3";
 
-const refund1Audio="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/refund1Audio.mp3";
-const refund2Audio="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/refund2Audio.mp3";
-const refund3Audio="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/refund3Audio.mp3";
-const qrcode="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/appimages/Qrcode.PNG";
-const appimg1= "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/appimages/appLoadingImg1.png";
-const appimg2= "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/appimages/appLoadingImg2.png";
-const appimg3= "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/appimages/appLoadingImg3.png";
+const refund1Audio="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/refund1Audio.mp3";
+const refund2Audio="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/refund2Audio.mp3";
+const refund3Audio="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/refund3Audio.mp3";
+const qrcode="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/appimages/Qrcode.PNG";
+const appimg1= "https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/appimages/appLoadingImg1.png";
+const appimg2= "https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/appimages/appLoadingImg2.png";
+const appimg3= "https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/appimages/appLoadingImg3.png";
 
-const appintro1="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/appintroimages/appIntroImg1.png";
-const appintro2="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/appintroimages/appIntroImg2.png";
-const appintro3="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/appintroimages/appIntroImg3.png";
-const appintro4="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/appintroimages/appIntroImg4.png";
-const appintro5="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/appintroimages/appIntroImg5.png";
+const appintro1="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/appintroimages/appIntroImg1.png";
+const appintro2="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/appintroimages/appIntroImg2.png";
+const appintro3="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/appintroimages/appIntroImg3.png";
+const appintro4="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/appintroimages/appIntroImg4.png";
+const appintro5="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/appintroimages/appIntroImg5.png";
 
 
-const userregimg1 ="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/UserRegImages/userregImg1.png";
-const userregimg2 ="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/UserRegImages/userregImg2.png";
-const userregimg3 ="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/UserRegImages/userregImg3.png";
+const userregimg1 ="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/UserRegImages/userregImg1.png";
+const userregimg2 ="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/UserRegImages/userregImg2.png";
+const userregimg3 ="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/UserRegImages/userregImg3.png";
 
-const paymentmethodimg1="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/paymentmethodimg/paymentMethodImg1.png";
-const paymentmethodimg2="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/paymentmethodimg/paymentMethodImg2.png";
-const paymentmethodimg3="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/paymentmethodimg/paymentMethodImg3.png";
-const paymentmethodimg4="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/paymentmethodimg/paymentMethodImg4.png";
-const paymentmethodimg5="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/paymentmethodimg/paymentMethodImg5.png";
-const paymentmethodimg6="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/paymentmethodimg/paymentMethodImg6.png";
-const paymentmethodimg7="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/paymentmethodimg/paymentMethodImg7.png";
+const paymentmethodimg1="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/paymentmethodimg/paymentMethodImg1.png";
+const paymentmethodimg2="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/paymentmethodimg/paymentMethodImg2.png";
+const paymentmethodimg3="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/paymentmethodimg/paymentMethodImg3.png";
+const paymentmethodimg4="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/paymentmethodimg/paymentMethodImg4.png";
+const paymentmethodimg5="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/paymentmethodimg/paymentMethodImg5.png";
+const paymentmethodimg6="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/paymentmethodimg/paymentMethodImg6.png";
+const paymentmethodimg7="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/paymentmethodimg/paymentMethodImg7.png";
 
-const rtpimg1="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/rtpimages/rtpImg1.png";
-const rtpimg2="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/rtpimages/rtpImg2.png";
-const rtpimg3="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/rtpimages/rtpImg3.png";
-const rtpimg4="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/rtpimages/rtpImg4.png";
+const rtpimg1="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/rtpimages/rtpImg1.png";
+const rtpimg2="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/rtpimages/rtpImg2.png";
+const rtpimg3="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/rtpimages/rtpImg3.png";
+const rtpimg4="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/rtpimages/rtpImg4.png";
 
-const refundimg1="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/refundprocess/refundImg1.png";
-const refundimg2="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/refundprocess/refundImg2.png";
-const refundimg3="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/refundprocess/refundImg3.png";
+const refundimg1="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/refundprocess/refundImg1.png";
+const refundimg2="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/refundprocess/refundImg2.png";
+const refundimg3="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/refundprocess/refundImg3.png";
 
-const recpayimg1="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/recordpayment/recpayImg1.png";
+const recpayimg1="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/recordpayment/recpayImg1.png";
 
-const recpayVidIn1="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/recordpayment/recpayIn1.mp4";
-const recpayVidIn2="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/recordpayment/recpayIn2.mp4";
-const recpayVidIn3="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/recordpayment/recpayIn3.mp4";
+const recpayVidIn1="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/recordpayment/recpayIn1.mp4";
+const recpayVidIn2="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/recordpayment/recpayIn2.mp4";
+const recpayVidIn3="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/recordpayment/recpayIn3.mp4";
 
-const blankAudio="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/blankAudio.mp3";
+const blankAudio="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Audios/blankAudio.mp3";
 
 
 // import recpayimg1 from "../SmartMerchantAssets/recordpayment/recpayImg1.png";

@@ -66,15 +66,15 @@ import arrow from "../SmartMerchantAssets/videos/arrow.webm";
 // import appHandPanSingle from "../SmartMerchantAssets/apploading/app_hand_pan_single.glb";
 // import appHandCardSingle from "../SmartMerchantAssets/paymentmethod/app_hand_card_single.glb";
 // import qrcode from "../SmartMerchantAssets/apploading/appimages/Qrcode.PNG";
-// const esy="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Esy.glb";
-// const esyHand="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/isy_hand.glb";
+// const esy="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Esy.glb";
+// const esyHand="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/isy_hand.glb";
 // import esy from "../SmartMerchantAssets/Esy.glb";
 // import esyHand from "../SmartMerchantAssets/isy_hand.glb";
 // import { esy,esyHand } from "./demoJsonTesting1";
-// const qrcode="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/appimages/Qrcode.PNG"
-// const appHandSingle="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_single.glb"
-// const appHandPanSingle="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_pan_single.glb"
-// const appHandCardSingle="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_card_single.glb"
+// const qrcode="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/appimages/Qrcode.PNG"
+// const appHandSingle="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_single.glb"
+// const appHandPanSingle="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_pan_single.glb"
+// const appHandCardSingle="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_card_single.glb"
 let entityLoaded = false;
 
 AFRAME.registerComponent("entity-loaded-appdemo", {

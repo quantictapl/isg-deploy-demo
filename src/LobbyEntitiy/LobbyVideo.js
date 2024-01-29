@@ -21,13 +21,13 @@ import isgloading from "../videos/isgloading.webm"
 function LobbyVideos({playVideo,tvVid}) {
     const navigate = useNavigate();
     const [mute,setMute]=useState(true)
-    const wallbrand="https://isg-assets.s3.ap-south-1.amazonaws.com/videos/wallbrand.mp4";
-    // const tv="https://isg-assets.s3.ap-south-1.amazonaws.com/videos/AboutUs.mp4";
-    const wifi="https://isg-assets.s3.ap-south-1.amazonaws.com/videos/wifi.mp4";
-    const frontwall="https://isg-assets.s3.ap-south-1.amazonaws.com/videos/frontdoorwall.mp4"; 
-    const btn="https://isg-assets.s3.ap-south-1.amazonaws.com/videos/circle.mp4";
-    // const muteBtn="https://isg-assets.s3.ap-south-1.amazonaws.com/images/mute.png";
-    // const volumeBtn="https://isg-assets.s3.ap-south-1.amazonaws.com/images/volume.png";
+    const wallbrand="https://isg-asset.s3.ap-south-1.amazonaws.com/videos/wallbrand.mp4";
+    // const tv="https://isg-asset.s3.ap-south-1.amazonaws.com/videos/AboutUs.mp4";
+    const wifi="https://isg-asset.s3.ap-south-1.amazonaws.com/videos/wifi.mp4";
+    const frontwall="https://isg-asset.s3.ap-south-1.amazonaws.com/videos/frontdoorwall.mp4"; 
+    const btn="https://isg-asset.s3.ap-south-1.amazonaws.com/videos/circle.mp4";
+    // const muteBtn="https://isg-asset.s3.ap-south-1.amazonaws.com/images/mute.png";
+    // const volumeBtn="https://isg-asset.s3.ap-south-1.amazonaws.com/images/volume.png";
 
 
     const handleMerchantClick = (event) => {

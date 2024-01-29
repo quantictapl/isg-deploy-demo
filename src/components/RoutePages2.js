@@ -20,7 +20,7 @@ import CustomLoadingScreen from "./CustomLoadingScreen";
 const logoutAPIUrl =
   "https://vyw54xaie6.execute-api.ap-south-1.amazonaws.com/prod/logout";
 export const esy =
-  "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Esy.glb";
+  "https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Esy.glb";
 function RoutePages() {
   const [username, setUsername] = useState("");
   const [lastVisitedPage, setLastVisitedPage] = useState("");
@@ -103,18 +103,18 @@ function RoutePages() {
         });
     }
   }, [lastVisitedPage, location.pathname, username]);
-  const appHandSingle="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_single.glb"
-  const appHandPanSingle="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_pan_single.glb"
-  const appHandCardSingle="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_card_single.glb"
+  const appHandSingle="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_single.glb"
+  const appHandPanSingle="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_pan_single.glb"
+  const appHandCardSingle="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_card_single.glb"
   useEffect(() => {
     // List of model URLs and their corresponding keys
     const modelURLList = [
-      { url: 'https://isg-assets.s3.ap-south-1.amazonaws.com/globeuu.glb', key: 'Model1' },
-      { url: 'https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Esy.glb', key: 'Model2' },
-      { url: 'https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/isy_hand.glb', key: 'Model3' },
-      { url: 'https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_single.glb', key: 'Model4' },
-      { url: 'https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_pan_single.glb', key: 'Model5' },
-      { url: 'https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_card_single.glb', key: 'Model6' },
+      { url: 'https://isg-asset.s3.ap-south-1.amazonaws.com/globeuu.glb', key: 'Model1' },
+      { url: 'https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Esy.glb', key: 'Model2' },
+      { url: 'https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/isy_hand.glb', key: 'Model3' },
+      { url: 'https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_single.glb', key: 'Model4' },
+      { url: 'https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_pan_single.glb', key: 'Model5' },
+      { url: 'https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/handassets/app_hand_card_single.glb', key: 'Model6' },
       
       // Add more models as needed
     ];
@@ -214,9 +214,9 @@ function RoutePages() {
   useEffect(() => {
     // List of video URLs and their corresponding keys
     const videoURLList = [
-      { url: 'https://isg-assets.s3.ap-south-1.amazonaws.com/videos/AboutUs.mp4', key: 'Video1' },
-      { url: 'https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/videos/MerchantTv1.mp4', key: 'Video2' },
-      { url: 'https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/videos/benifits.mp4', key: 'Video3' },
+      { url: 'https://isg-asset.s3.ap-south-1.amazonaws.com/videos/AboutUs.mp4', key: 'Video1' },
+      { url: 'https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/videos/MerchantTv1.mp4', key: 'Video2' },
+      { url: 'https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/videos/benifits.mp4', key: 'Video3' },
       // Add more video links as needed
     ];
 
@@ -315,9 +315,9 @@ function RoutePages() {
   useEffect(() => {
     // List of image URLs and their corresponding keys
     const imageURLList = [
-      { url: 'https://isg-assets.s3.ap-south-1.amazonaws.com/Lobby.webp', key: 'Image1' },
-      { url: 'https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchant.jpg', key: 'Image2' },
-      { url: 'https://isg-assets.s3.ap-south-1.amazonaws.com/WithTable.jpg', key: 'Image3' },
+      { url: 'https://isg-asset.s3.ap-south-1.amazonaws.com/Lobby.webp', key: 'Image1' },
+      { url: 'https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchant.jpg', key: 'Image2' },
+      { url: 'https://isg-asset.s3.ap-south-1.amazonaws.com/WithTable.jpg', key: 'Image3' },
       // Add more image links as needed
     ];
 
@@ -469,7 +469,7 @@ function RoutePages() {
           />
           {/* <Route path="/smartmerchant" element={<SmartMerchantHelper model={model} />} /> */}
           {/* <Route path="/smartmerchant/appdemo" element={<AppDemonstrationContainer model={model} />} />  */}
-          <Route path="*" element={<Login />} />
+          <Route path="*" element={<Opening />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/testing3d" element={<Testing3d models={models}/>} />
           <Route path="/jsxtesting" element={<CustomLoadingScreen/>} />

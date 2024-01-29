@@ -9,7 +9,7 @@ function PrivateRoute({ component: Compontent,authenticated,models,videos,images
     // console.log(authenticated)
 
 
-  return authenticated ? <Compontent models={models} videos={videos} images={images}/> : <Navigate to="/login" />
+  return !authenticated ? <Compontent models={models} videos={videos} images={images}/> : <Navigate to="/login" />
 
 }
 

@@ -26,15 +26,15 @@ import * as AFRAME from "aframe"
 import "./CameraIntitalRotation";
 import "./CameraMovement";
 import "./IsyControlledAnimation"
-const esy="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Esy.glb"
-const smartIntro= "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/videos/dialogs/smartintro.webm";
-const smartIntroAudio= "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/videos/dialogs/smartintroAudio.mp4";
-const supermarketVideo= "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/videos/dialogs/supermarket.webm";
-const supermarketAudio= "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/videos/dialogs/supermarketAudio.mp4";
-const benfitsDialogVideo= "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/videos/dialogs/benfitsDialog.webm";
-const benifitsDialogAudio= "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/videos/dialogs/benifitsDialogAudio.mp4";
-const merchantTv="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/videos/MerchantTv.mp4";
-const  benifits="https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/videos/benifits.mp4";
+const esy="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Esy.glb"
+const smartIntro= "https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/videos/dialogs/smartintro.webm";
+const smartIntroAudio= "https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/videos/dialogs/smartintroAudio.mp4";
+const supermarketVideo= "https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/videos/dialogs/supermarket.webm";
+const supermarketAudio= "https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/videos/dialogs/supermarketAudio.mp4";
+const benfitsDialogVideo= "https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/videos/dialogs/benfitsDialog.webm";
+const benifitsDialogAudio= "https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/videos/dialogs/benifitsDialogAudio.mp4";
+const merchantTv="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/videos/MerchantTv.mp4";
+const  benifits="https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/videos/benifits.mp4";
 const videoSources = [
   merchantTv,
   benifits,

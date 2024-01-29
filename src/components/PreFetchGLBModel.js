@@ -4,7 +4,7 @@ export function PrefetchGLBModel() {
       // Create a new link element for prefetching the .glb model
       const link = document.createElement('link');
       link.rel = 'prefetch';
-      link.href = "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Esy.glb";
+      link.href = "https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Esy.glb";
       link.as = 'fetch';
       link.crossOrigin = 'anonymous';
   

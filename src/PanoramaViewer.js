@@ -12,8 +12,8 @@ function PanoramaViewer({models,videos,images}) {
   const globe=models.Model1;
   const tv=videos.Video1;
   localStorage.setItem('lastVisitedPage', "/isglobby");
-  // const rough="https://isg-assets.s3.ap-south-1.amazonaws.com/RoughLobby.jpg";
-  // const globe="https://isg-assets.s3.ap-south-1.amazonaws.com/globeuu.glb";
+  // const rough="https://isg-asset.s3.ap-south-1.amazonaws.com/RoughLobby.jpg";
+  // const globe="https://isg-asset.s3.ap-south-1.amazonaws.com/globeuu.glb";
   useEffect(() => {
     // Simulate a delay for demonstration purposes
     const timeout = setTimeout(() => {

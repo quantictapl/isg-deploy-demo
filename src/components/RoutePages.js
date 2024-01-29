@@ -19,7 +19,7 @@ import { resetUserSession, getUser } from "../service/AuthService";
 const logoutAPIUrl =
   "https://vyw54xaie6.execute-api.ap-south-1.amazonaws.com/prod/logout";
 export const esy =
-  "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Esy.glb";
+  "https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Esy.glb";
 function RoutePages() {
   const [username, setUsername] = useState("");
   const [lastVisitedPage, setLastVisitedPage] = useState("");
@@ -120,7 +120,7 @@ function RoutePages() {
   // useEffect(() => {
   //   // URL of the .glb model
   //   const modelUrl =
-  //     "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Esy.glb";
+  //     "https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Esy.glb";
 
   //   // Fetch the .glb model
   //   fetch(modelUrl)
@@ -152,7 +152,7 @@ function RoutePages() {
   // useEffect(() => {
   //   // URL of the .glb model
   //   const modelUrl =
-  //     "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Esy.glb";
+  //     "https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Esy.glb";
   //     const cachedModelData = localStorage.getItem("cachedModel");
   //     if (cachedModelData) {
   //       // If it exists in local storage, use it
@@ -189,7 +189,7 @@ function RoutePages() {
   // }, []);
   useEffect(() => {
     // URL of the .glb model
-    const modelUrl = "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Esy.glb";
+    const modelUrl = "https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Esy.glb";
   
     // Fetch the .glb model
     fetch(modelUrl,{ responseType: 'blob' })
@@ -268,7 +268,7 @@ function RoutePages() {
   useEffect(() => {
     // URL of the .glb model
     const modelUrl =
-      "https://isg-assets.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Esy.glb";
+      "https://isg-asset.s3.ap-south-1.amazonaws.com/SmartMerchantAssets/Esy.glb";
 
     // Fetch the .glb model
     fetch(modelUrl)
